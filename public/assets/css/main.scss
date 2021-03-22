@@ -1,0 +1,368 @@
+@import "anim";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+b,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+      font-family: "Barlow", sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+      display: block;
+}
+body {
+      line-height: 1;
+}
+ol,
+ul {
+      list-style: none;
+}
+blockquote,
+q {
+      quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+      content: "";
+      content: none;
+}
+table {
+      border-collapse: collapse;
+      border-spacing: 0;
+}
+
+$roxo: #6c1cd1;
+$laranja: #f75111;
+$roxo-escuro: #230a44;
+$rosa: #e41d7f;
+$cinza: #372b2b;
+
+
+#top {
+      background-image: url("/./assets/img/faixa.png");
+      position: absolute;
+      width: 100vw;
+      height: 8px;
+      top: 0px;
+
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+}
+.header {
+      background-image: url("/./assets/img/background.png");
+      position: relative;
+      width: 100vw;
+      height: 20vh;
+      top: 8px;
+      background-color: #3f3e3e;
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.img-cardapio {
+      img {
+            height: 120px;
+            object-fit: cover;
+            width: 100%;
+      }
+}
+
+.img-back-alt {
+      background-color: #3f3e3e;
+      border-bottom-right-radius: 53px;
+      border-bottom-left-radius: 53px;
+      z-index: 100;
+}
+.img-logo {
+      width: 223px;
+      height: auto;
+      position: relative;
+      left: 4em;
+      top: 1em;
+
+      img {
+            width: 100%;
+      }
+}
+
+.img-logo-alt {
+      text-align: -webkit-center;
+      height: auto;
+      img {
+            width: 70%;
+      }
+}
+.logo-client {
+      height: 20vh;
+      width: 40vw;
+      img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+      }
+}
+.icons {
+      margin: 0 5px;
+}
+
+.tooltip {
+      position: relative;
+      display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 5px 0;
+      border-radius: 6px;
+
+      /* Position the tooltip text - see examples below! */
+      position: absolute;
+      z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+      visibility: visible;
+}
+.products-grid {
+      p {
+            margin-top: 10px;
+      }
+}
+.img-product {
+      position: absolute;
+      top: 50px;
+      z-index: -1;
+      width: 100%;
+
+      img {
+            width: 100%;
+            height: 45vh;
+            object-fit: cover;
+      }
+}
+.desc {
+      position: absolute;
+      top: 55%;
+}
+.home-base {
+      text-align: center;
+      height: 15vh;
+      margin-top: 8px;
+
+      h2 {
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding-top: 8px;
+            text-transform: uppercase;
+      }
+}
+.home-base-2 {
+      text-align: center;
+      height: 32vh;
+      h2 {
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding-top: 8px;
+            text-transform: uppercase;
+      }
+}
+.home-base-3 {
+      text-align: center;
+      height: 25vh;
+      margin-top: 18px;
+      h2 {
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding-top: 8px;
+            text-transform: uppercase;
+      }
+}
+.delivery-base {
+      text-align: center;
+      height: 15vh;
+    
+      div {
+            height: 100%;
+      }
+      h2 {
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding-top: 8px;
+            text-transform: uppercase;
+      }
+}
+.delivery-base-2 {
+      text-align: center;
+    
+    
+      div {
+            height: 100%;
+            padding: 5.3125em 0;
+      }
+      h2 {
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding-top: 8px;
+            text-transform: uppercase;
+      }
+}
+
+.bg-cinza{
+      background-color: $cinza;
+}
+.bg-roxo{
+      background-color: $roxo;
+}
+.bg-laranja{
+      background-color: $laranja;
+}
+.bg-roxo-escuro{
+      background-color: $roxo-escuro;
+}
+.bg-rosa{
+      background-color: $rosa;
+}
+
+
+
+
+
+.delivery {
+      background-color: $roxo;
+      padding: 40px 0;
+}
+.gastronomia {
+      background-color: $laranja;
+      padding: 36px 0;
+}
+.loja {
+      background-color: $roxo-escuro;
+      padding: 36px 0;
+}
+.estetica {
+      background-color: $rosa;
+      padding: 40px 0;
+}
+.cadastro {
+      background-color: $roxo;
+      padding: 40px 0;
+}
+.mes {
+      background-color: $cinza;
+
+      padding: 4em 0;
+}
+.pontos {
+      background-color: $laranja;
+      padding: 4em 0;
+}
+.banner {
+      margin-top: 1px;
+}
