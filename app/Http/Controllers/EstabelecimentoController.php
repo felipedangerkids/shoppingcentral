@@ -80,7 +80,7 @@ class EstabelecimentoController extends Controller
     public function teste()
     {
         $id = auth()->user()->id;
-        $user = Produto::with('estabelecimento')->get();
+        $user = User::with('estabelecimento')->find(1);
         dd($user);
     }
     /**

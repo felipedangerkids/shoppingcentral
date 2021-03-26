@@ -45,6 +45,22 @@ closeModal.forEach(close => {
       });
 });
 
+
+const modal3 = document.querySelector('.user-modal');
+
+const showModal3 = document.querySelector('.open-modal');
+const closeModal3 = document.querySelectorAll('.fechar-modal');
+
+showModal3.addEventListener('click', function () {
+      modal3.classList.remove('hidden')
+});
+
+closeModal3.forEach(close => {
+      close.addEventListener('click', function () {
+            modal3.classList.add('hidden')
+      });
+});
+
 $('#price').maskMoney({
       allowNegative: false,
       thousands: '.',
