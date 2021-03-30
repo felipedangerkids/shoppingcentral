@@ -10,6 +10,12 @@
                   <h2 class="mx-auto text-center">Logado como:</h2>
 
                   <h1 class="text-2xl mx-auto uppercase text-center mx-auto mt-4">{{ auth()->user()->name }}</h1>
+                  <a  href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
+                       <span class="px-14 pt-10"><i class="fas fa-sign-out-alt"></i> Sair</span> 
+                  </a>
+                  <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                  </form>
             </div>
             <div class="">
                   <img width="120" src="{{ url('assets/img/domingos.jpg') }}" alt="">
