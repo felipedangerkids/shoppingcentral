@@ -16,7 +16,9 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-        //
+
+        $produtos = Produto::where('user_id', auth()->user()->id)->get();
+        return view('cliente.produto.lista', compact('produtos'));
     }
 
     /**
@@ -50,7 +52,8 @@ class ProdutoController extends Controller
         $img->save($originalPath . $name);
 
         $product = Produto::create([
-            'user_id' => $data['est'],
+            'est_id' => $data['est'],
+            'user_id' => $user,
             'image' => $name,
             'name' => $data['name'],
             'desc' => $data['desc'],
@@ -103,6 +106,9 @@ class ProdutoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $product = Produto::find($id);
+        $product->delete();
+
+        return redirect()->back()->with('success', 'Produto deletado com sucesso!'); 
     }
 }

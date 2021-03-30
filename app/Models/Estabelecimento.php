@@ -20,6 +20,6 @@ class Estabelecimento extends Model
 
     public function produtos()
     {
-        return $this->hasMany(Produto::class, 'user_id');
+        return $this->hasMany(Produto::class, 'est_id');
     }
 }

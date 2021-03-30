@@ -25,6 +25,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/cliente', [SiteController
 Route::middleware(['auth:sanctum', 'verified'])->post('/produto-store', [ProdutoController::class, 'store']);
 Route::middleware(['auth:sanctum', 'verified'])->post('/user-store', [UserController::class, 'store']);
 Route::middleware(['auth:sanctum', 'verified'])->any('/user-delete/{id}', [UserController::class, 'destroy']);
+Route::middleware(['auth:sanctum', 'verified'])->any('/product-delete/{id}', [ProdutoController::class, 'destroy']);
+Route::middleware(['auth:sanctum', 'verified'])->get('/product-list', [ProdutoController::class, 'index']);
 
 
 

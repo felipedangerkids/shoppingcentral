@@ -19,11 +19,11 @@ class Produto extends Model
     }
 
     protected $fillable = [
-       'user_id', 'image', 'name', 'slug', 'desc', 'price', 'time'
+      'est_id', 'user_id', 'image', 'name', 'slug', 'desc', 'price', 'time'
     ];
 
     public function estabelecimento()
     {
-        return $this->belongsTo(Estabelecimento::class, 'user_id');
+        return $this->belongsTo(Estabelecimento::class, 'est_id');
     }
 }

@@ -80,6 +80,25 @@ closeModal4.forEach(close => {
 });
 
 
+const modal5 = document.querySelector('.produto-modal-edit');
+
+const showModal5 = document.querySelector('.open-modal-edit');
+const closeModal5 = document.querySelectorAll('.modal-close-edit');
+
+showModal5.addEventListener('click', function () {
+      modal5.classList.remove('hidden')
+});
+
+closeModal5.forEach(close => {
+      close.addEventListener('click', function () {
+            modal5.classList.add('hidden')
+      });
+});
+
+
+
+
+
 
 
 
