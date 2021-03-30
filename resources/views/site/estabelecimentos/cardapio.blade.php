@@ -41,9 +41,7 @@
 </section>
 
 <section>
-      <div class="bg-black text-center  py-12 text-white">
-            <p class="mx-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error modi delectus facilis ea fugiat accusamus maiores hic, obcaecati eligendi ipsum assumenda suscipit culpa quis ad neque minus omnis saepe temporibus.</p>
-      </div>
+
 </section>
 {{-- <section class="container  my-4">
       <div class="grid grid-cols-2">

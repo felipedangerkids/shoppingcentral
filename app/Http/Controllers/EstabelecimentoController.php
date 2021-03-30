@@ -51,13 +51,19 @@ class EstabelecimentoController extends Controller
 
         $img->save($originalPath . $name);
 
+        $telefone = str_replace(' ', '', $data['telefone']);
+        $whatsapp = str_replace(' ', '', $data['whatsapp']);
+
+        $fone = str_replace('-', '', $telefone);
+        $whats = str_replace('-', '', $whatsapp);
+
         $product = Estabelecimento::create([
             'user_id' => $user,
             'name' => $data['name'],
             'segmento' => $data['segmento'],
             'delivery' => $data['delivery'],
-            'telefone' => $data['telefone'],
-            'whatsapp' => $data['whatsapp'],
+            'telefone' => $fone,
+            'whatsapp' => $whats,
             'logo' => $name,
             'time' => $data['time']
         ]);

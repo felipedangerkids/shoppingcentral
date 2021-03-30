@@ -46,12 +46,12 @@
                               </div>
                               <div class="py-2">
                                     <input class="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
-                                          id="cus_name" name="telefone" type="text" required=""
+                                          id="telefone" name="telefone" type="text" required=""
                                           placeholder="Telefone do estabelecimento" aria-label="Name">
                               </div>
                               <div class="py-2">
                                     <input class="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
-                                          id="cus_name" name="whatsapp" type="text" required=""
+                                          id="whatsapp" name="whatsapp" type="text" required=""
                                           placeholder="Whatsapp do estabelecimento" aria-label="Name">
                               </div>
 

@@ -55,6 +55,7 @@
       <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
       <script src="{{ url('assets/js/jquery.maskMoney.min.js') }}"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
       <script src="{{ asset('assets/js/script.js') }}"></script>
       @if(Session::has('success'))
