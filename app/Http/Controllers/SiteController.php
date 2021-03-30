@@ -38,7 +38,7 @@ class SiteController extends Controller
     {
         $id = auth()->user()->id;
         $user = User::with('estabelecimento')->find($id);
-        $users = User::all();
+        $users = User::paginate(10);
         return view('cliente.index', compact('user', 'users'));
     }
 }
