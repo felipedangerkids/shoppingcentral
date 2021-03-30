@@ -68,7 +68,7 @@
 </div>
 </div>
 </section> --}}
-<section class="my-5 products-grid">
+<section class="my-10 products-grid">
       <div class="grid mx-4 gap-3 text-center uppercase font-bold font-xl grid-cols-2">
             @foreach ($estabelecimento->produtos as $produto)
             <a href="{{ url('produto/'. $produto->slug) }}">
