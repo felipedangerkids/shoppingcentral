@@ -61,6 +61,28 @@ closeModal3.forEach(close => {
       });
 });
 
+
+
+
+const modal4 = document.querySelector('.user-modal-list');
+
+const showModal4 = document.querySelector('.open-modal-list');
+const closeModal4 = document.querySelectorAll('.fechar-modal-list');
+
+showModal4.addEventListener('click', function () {
+      modal4.classList.remove('hidden')
+});
+
+closeModal4.forEach(close => {
+      close.addEventListener('click', function () {
+            modal4.classList.add('hidden')
+      });
+});
+
+
+
+
+
 $('#price').maskMoney({
       allowNegative: false,
       thousands: '.',

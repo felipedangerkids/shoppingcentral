@@ -3,6 +3,7 @@
 use App\Http\Controllers\EstabelecimentoController;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\SiteController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,6 +23,10 @@ Route::get('/cardapio/{id}', [SiteController::class, 'cardapio']);
 Route::get('/produto/{slug}', [SiteController::class, 'produto']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/cliente', [SiteController::class, 'cliente']);
 Route::middleware(['auth:sanctum', 'verified'])->post('/produto-store', [ProdutoController::class, 'store']);
+Route::middleware(['auth:sanctum', 'verified'])->post('/user-store', [UserController::class, 'store']);
+Route::middleware(['auth:sanctum', 'verified'])->any('/user-delete/{id}', [UserController::class, 'destroy']);
+
+
 
 Route::middleware(['auth:sanctum', 'verified'])->post('estabelecimento-store', [EstabelecimentoController::class, 'store']);
 Route::middleware(['auth:sanctum', 'verified'])->get('teste', [EstabelecimentoController::class, 'teste']);

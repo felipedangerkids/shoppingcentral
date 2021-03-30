@@ -38,6 +38,7 @@ class SiteController extends Controller
     {
         $id = auth()->user()->id;
         $user = User::with('estabelecimento')->find($id);
-        return view('cliente.index', compact('user'));
+        $users = User::all();
+        return view('cliente.index', compact('user', 'users'));
     }
 }
