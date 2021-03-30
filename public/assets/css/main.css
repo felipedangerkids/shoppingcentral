@@ -396,13 +396,16 @@ table {
 .img-logo {
   width: 223px;
   height: auto;
-  position: relative;
-  left: 4em;
-  top: 1em;
 }
 
 .img-logo img {
   width: 100%;
+}
+
+.voltar a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.3em;
 }
 
 .img-logo-alt {
