@@ -2,24 +2,6 @@
 
 @section('content')
 <section class="top">
-
-      <div class="img-back-alt">
-            <div class="flex container  py-8">
-                  <div class="flex uppercase font-bold items-center text-white ml-auto my-auto">
-                        <div>
-                              <img src="{{ asset('assets/img/bi_arrow-left-circle.png') }}" alt="">
-                        </div>
-                       <a href="javascript:history.back()"><div class="ml-1">
-                              <span>Voltar</span>
-                        </div></a>
-                  </div>
-                  <div class="flex mx-auto te my-auto">
-                        <div class="img-logo-alt">
-                              <img src="{{ asset('assets/img/logo.png') }}" alt="">
-                        </div>
-                  </div>
-            </div>
-      </div>
       <div class="img-product">
             <img src="{{ asset('storage/products/'. $produto->image) }}" alt="">
       </div>
