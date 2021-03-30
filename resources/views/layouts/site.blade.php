@@ -23,7 +23,7 @@
       <div id="top" class="color-change-4x"></div>
       <section>
             @if (Request::path() != '/')
-            <div class="header flex ">
+            <div class="header flex py-5">
 
                   <div class="my-auto voltar">
                         <a href="javascript:history.back()" class="ml-8"> <i class="fas fa-arrow-circle-left"></i></a>
@@ -36,15 +36,15 @@
                   </div>
 
             </div>
-            @else 
-            <div class="header">
-                        <div class="img-back mx-10">
-                              <div class="img-logo mx-auto">
-                                    <img class="mx-auto" src="{{ asset('assets/img/logo.svg') }}" alt="">
-                              </div>
+            @else
+            <div class="header py-4">
+                  <div class="img-back mx-10 ">
+                        <div class="img-logo mx-auto">
+                              <img class="mx-auto" src="{{ asset('assets/img/logo.svg') }}" alt="">
                         </div>
-                  
                   </div>
+
+            </div>
             @endif
       </section>
 
