@@ -21,6 +21,22 @@ class SiteController extends Controller
         return view('site.estabelecimentos.delivery', compact('estabelecimentos'));
     }
 
+    public function gastronomia()
+    {
+        $estabelecimentos = Estabelecimento::with('produtos')->get();
+        return view('site.estabelecimentos.gastronomia', compact('estabelecimentos'));
+    }
+    public function cosmeticos()
+    {
+        $estabelecimentos = Estabelecimento::with('produtos')->get();
+        return view('site.estabelecimentos.cosmeticos', compact('estabelecimentos'));
+    }
+    public function lojas()
+    {
+        $estabelecimentos = Estabelecimento::with('produtos')->get();
+        return view('site.estabelecimentos.lojas', compact('estabelecimentos'));
+    }
+
     public function cardapio($id)
     {
 

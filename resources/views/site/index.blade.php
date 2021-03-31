@@ -10,14 +10,18 @@
                         <h2>Delivery</h2>
                   </div>
             </a>
-            <div class="gastronomia flip-in-hor-top">
-                  <img class="mx-auto w-1/4" src="{{ url('assets/img/gastronomia.svg') }}" alt="">
-                  <h2>Gastronomia</h2>
-            </div>
-            <div class="loja flip-in-hor-top">
-                  <img class="mx-auto w-1/4" src="{{ url('assets/img/loja.svg') }}" alt="">
-                  <h2>Lojas</h2>
-            </div>
+            <a href="{{ url('gastronomia') }}">
+                  <div class="gastronomia flip-in-hor-top">
+                        <img class="mx-auto w-1/4" src="{{ url('assets/img/gastronomia.svg') }}" alt="">
+                        <h2>Gastronomia</h2>
+                  </div>
+            </a>
+            <a href="{{ url('lojas') }}">
+                  <div class="loja flip-in-hor-top">
+                        <img class="mx-auto w-1/4" src="{{ url('assets/img/loja.svg') }}" alt="">
+                        <h2>Lojas</h2>
+                  </div>
+            </a>
 
       </div>
 </section>
@@ -27,10 +31,12 @@
                   <img class="object-cover banner" src="{{ url('assets/img/banner.jpg') }}" alt="">
             </div>
             <div class="flex flex-col slide-in-blurred-right">
-                  <div class="estetica">
-                        <img class="mx-auto w-1/4" src="{{ url('assets/img/estetica.svg') }}" alt="">
-                        <h2>Estética</h2>
-                  </div>
+                  <a href="{{ url('cosmeticos') }}">
+                        <div class="estetica">
+                              <img class="mx-auto w-1/4" src="{{ url('assets/img/estetica.svg') }}" alt="">
+                              <h2>Estética</h2>
+                        </div>
+                  </a>
 
                   <div class="cadastro slide-in-blurred-right">
                         <img class="mx-auto w-1/4" src="{{ url('assets/img/cadastro.svg') }}" alt="">
