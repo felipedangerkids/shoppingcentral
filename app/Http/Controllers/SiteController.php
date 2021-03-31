@@ -57,4 +57,9 @@ class SiteController extends Controller
         $users = User::paginate(10);
         return view('cliente.index', compact('user', 'users'));
     }
+
+    public function coming()
+    {
+        return view('site.coming');
+    }
 }

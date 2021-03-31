@@ -38,10 +38,12 @@
                         </div>
                   </a>
 
-                  <div class="cadastro slide-in-blurred-right">
-                        <img class="mx-auto w-1/4" src="{{ url('assets/img/cadastro.svg') }}" alt="">
-                        <h2>Cadastro</h2>
-                  </div>
+                  <a href="{{ url('coming') }}">
+                        <div class="cadastro slide-in-blurred-right">
+                              <img class="mx-auto w-1/4" src="{{ url('assets/img/cadastro.svg') }}" alt="">
+                              <h2>Cadastro</h2>
+                        </div>
+                  </a>
 
             </div>
 
@@ -49,18 +51,26 @@
 </section>
 <section>
       <div class="home-base-2 container grid grid-cols-3">
+
             <div class="mes slide-in-blurred-right flex items-center col-span-2">
-                  <div class="mx-auto ">
-                        <h2 class="font-2xl">Agenda do Mês</h2>
-                  </div>
-                  <div>
-                        <img class="mx-auto w-1/4" src="{{ url('assets/img/mes.svg') }}" alt="">
-                  </div>
+                  <a href="{{ url('coming') }}">
+                        <div class="flex items-center flex items-center col-span-2">
+                              <div class="mx-auto ">
+                                    <h2 class="font-2xl">Agenda do Mês</h2>
+                              </div>
+                              <div>
+                                    <img class="mx-auto w-1/4" src="{{ url('assets/img/mes.svg') }}" alt="">
+                              </div>
+                        </div>
+                  </a>
             </div>
-            <div class="pontos slide-in-blurred-right">
-                  <img class="mx-auto w-1/4" src="{{ url('assets/img/pontos.svg') }}" alt="">
-                  <h2>Programa de Pontos</h2>
+
+            <div class="pontos slide-in-blurred-right"><a href="{{ url('coming') }}">
+                        <img class="mx-auto w-1/4" src="{{ url('assets/img/pontos.svg') }}" alt="">
+                        <h2>Programa de Pontos</h2>
+                  </a>
             </div>
+
       </div>
 </section>
 {{-- <section class="slide-product my-12">

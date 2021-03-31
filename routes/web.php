@@ -22,6 +22,7 @@ Route::get('/delivery', [SiteController::class, 'delivery']);
 Route::get('/gastronomia', [SiteController::class, 'gastronomia']);
 Route::get('/cosmeticos', [SiteController::class, 'cosmeticos']);
 Route::get('/lojas', [SiteController::class, 'lojas']);
+Route::get('/coming', [SiteController::class, 'coming']);
 Route::get('/cardapio/{id}', [SiteController::class, 'cardapio']);
 Route::get('/produto/{slug}', [SiteController::class, 'produto']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/cliente', [SiteController::class, 'cliente']);
