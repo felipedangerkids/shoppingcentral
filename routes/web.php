@@ -28,11 +28,8 @@ Route::middleware(['auth:sanctum', 'verified'])->any('/user-delete/{id}', [UserC
 Route::middleware(['auth:sanctum', 'verified'])->any('/product-delete/{id}', [ProdutoController::class, 'destroy']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/product-list', [ProdutoController::class, 'index']);
 
-
-
 Route::middleware(['auth:sanctum', 'verified'])->post('estabelecimento-store', [EstabelecimentoController::class, 'store']);
 Route::middleware(['auth:sanctum', 'verified'])->get('teste', [EstabelecimentoController::class, 'teste']);
-
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
