@@ -53,7 +53,7 @@
       <div class="home-base-2 container grid grid-cols-3">
 
             <div class="mes slide-in-blurred-right flex items-center col-span-2">
-                  <a href="">
+                  <a href="{{ url('coming') }}">
                         <div class="flex items-center ">
                               <div class="mx-auto ">
                                     <h2 class="font-2xl ml-16">Agenda do Mês</h2>
