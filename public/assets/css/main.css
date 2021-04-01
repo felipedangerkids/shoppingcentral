@@ -486,44 +486,6 @@
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .home-base {
-    text-align: center;
-    height: 15vh;
-    margin-top: 8px;
-  }
-  .home-base h2 {
-    color: white;
-    font-weight: bold;
-    font-size: 1.1em;
-    padding-top: 8px;
-    text-transform: uppercase;
-  }
-  .home-base-2 {
-    text-align: center;
-    height: 32vh;
-  }
-  .home-base-2 h2 {
-    color: white;
-    font-weight: bold;
-    font-size: 1.1em;
-    padding-top: 8px;
-    text-transform: uppercase;
-  }
-  .home-base-3 {
-    text-align: center;
-    height: 25vh;
-    margin-top: 18px;
-  }
-  .home-base-3 h2 {
-    color: white;
-    font-weight: bold;
-    font-size: 1.1em;
-    padding-top: 8px;
-    text-transform: uppercase;
-  }
-}
-
 html,
 body,
 div,

@@ -15,7 +15,7 @@
       <!-- Add the slick-theme.css if you want default styling -->
       <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
       <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-      <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" media="screen and (max-device-height: 850px)">
+      <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" media="screen and (max-device-height: 900px)">
       <title>Shopping Central</title>
 </head>
 
