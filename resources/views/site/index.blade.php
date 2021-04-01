@@ -5,19 +5,19 @@
 <section>
       <div class="home-base container grid grid-cols-3">
             <a href="{{ url('delivery') }}">
-                  <div class="delivery flip-in-hor-top">
+                  <div class="delivery">
                         <img class="mx-auto my-auto w-1/4" src="{{ url('assets/img/delivery.svg') }}" alt="">
                         <h2>Delivery</h2>
                   </div>
             </a>
             <a href="{{ url('gastronomia') }}">
-                  <div class="gastronomia flip-in-hor-top">
+                  <div class="gastronomia">
                         <img class="mx-auto w-1/4" src="{{ url('assets/img/gastronomia.svg') }}" alt="">
                         <h2>Gastronomia</h2>
                   </div>
             </a>
             <a href="{{ url('lojas') }}">
-                  <div class="loja flip-in-hor-top">
+                  <div class="loja">
                         <img class="mx-auto w-1/4" src="{{ url('assets/img/loja.svg') }}" alt="">
                         <h2>Lojas</h2>
                   </div>
