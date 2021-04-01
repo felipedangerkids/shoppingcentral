@@ -12,7 +12,7 @@
             <div class="grid grid-cols-2">
                   <div>
                         <div class="uppercase text-center font-bold text-lg text-white">
-                              <h3 class="mx-auto py-12  my-auto"> {{ $estabelecimento->name }}</h3>
+                              <h3 class="mx-auto py-12 px-2 my-auto"> {{ $estabelecimento->name }}</h3>
                         </div>
                   </div>
                   <div>
