@@ -27,10 +27,10 @@
 </section>
 <section>
       <div class="home-base-2 container grid grid-cols-3">
-            <div class="col-span-2 slide-in-blurred-right">
+            <div class="col-span-2 ">
                   <img class="object-cover banner" src="{{ url('assets/img/banner.jpg') }}" alt="">
             </div>
-            <div class="flex flex-col slide-in-blurred-right">
+            <div class="flex flex-col ">
                   <a href="{{ url('cosmeticos') }}">
                         <div class="estetica">
                               <img class="mx-auto w-1/4" src="{{ url('assets/img/estetica.svg') }}" alt="">
@@ -39,7 +39,7 @@
                   </a>
 
                   <a href="{{ url('coming') }}">
-                        <div class="cadastro slide-in-blurred-right">
+                        <div class="cadastro ">
                               <img class="mx-auto w-1/4" src="{{ url('assets/img/cadastro.svg') }}" alt="">
                               <h2>Cadastro</h2>
                         </div>
