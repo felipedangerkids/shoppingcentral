@@ -11,7 +11,7 @@
       <div class="container pt-16  {!! $cores[array_rand($cores, 1)] !!} ">
             <div class="grid grid-cols-2">
                   <div>
-                        <div class="uppercase text-center font-bold text-2xl text-white">
+                        <div class="uppercase text-center font-bold text-lg text-white">
                               <h3 class="mx-auto py-12  my-auto"> {{ $estabelecimento->name }}</h3>
                         </div>
                   </div>
