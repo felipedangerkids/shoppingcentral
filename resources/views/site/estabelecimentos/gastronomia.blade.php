@@ -35,7 +35,7 @@
 
       @endphp
 
-      <div class="container delivery-base-2 grid grid-cols-2">
+      <div class="container delivery-base-2 grid grid-cols-2 mt-5">
 
             @foreach ($estabelecimentos as $est)
             @if ($est->segmento == 1)
