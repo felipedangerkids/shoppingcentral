@@ -14,7 +14,7 @@
             <div>
                   <a href="{{ url('cosmeticos') }}">
                         <div class="bg-cinza py-10">
-                              <h2 class="mx-auto ">Estética</h2>
+                              <h2 class="mx-auto "></h2>
                         </div>
                   </a>
 
@@ -22,7 +22,7 @@
             <div>
                   <a href="{{ url('cosmeticos') }}">
                         <div class="bg-roxo-escuro py-10">
-                              <h2 class="mx-auto">Estética</h2>
+                              <h2 class="mx-auto"></h2>
                         </div>
                   </a>
             </div>
