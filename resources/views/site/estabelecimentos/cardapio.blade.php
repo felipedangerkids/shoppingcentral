@@ -24,17 +24,25 @@
             <div class="relative mx-5 top-8">
                   <div class="grid justify-center grid-cols-4">
                         <div >
-                              <img class="w-3/4 mx-auto my-auto" src="{{ url('assets/img/ifood.svg') }}" alt="">
+                            <a href="https://api.whatsapp.com/send?phone=55{{ $estabelecimento->whatsapp }}&text="> <img class="w-3/4 mx-auto my-auto" src="{{ url('assets/img/ifood.svg') }}" alt=""></a>
                         </div>
                         <div>
-                              <img class="w-3/4 mx-auto my-auto" src="{{ url('assets/img/whatsapp.svg') }}" alt="">
+                            <a href="https://www.ifood.com.br/{{ $estabelecimento->ifood}}">  <img class="w-3/4 mx-auto my-auto" src="{{ url('assets/img/whatsapp.svg') }}" alt=""></a>
                         </div>
                         <div>
                               <img class="w-3/4 mx-auto my-auto" src="{{ url('assets/img/central.svg') }}" alt="">
                         </div>
-                        <div>
-                              <img class="w-3/4 mx-auto my-auto" src="{{ url('assets/img/relogio.svg') }}" alt="">
+                        <div class="group cursor-pointer">
+                              <img class="w-3/4 mx-auto my-auto group" src="{{ url('assets/img/relogio.svg') }}" alt="">
+                              <div
+                                          class="opacity-0 w-28 bg-black text-white text-center text-xs rounded-lg py-2 relative z-10 group-hover:opacity-100 bottom-full -left-3/4 ml-14 px-3 pointer-events-none">
+                                         {{ $estabelecimento->time }}
+                                          <svg class="relative text-black h-2 w-full left-0 top-full" x="0px" y="0px" viewBox="0 0 255 255"
+                                                xml:space="preserve">
+                                                <polygon class="fill-current" points="0,0 127.5,127.5 255,0" /></svg>
+                                    </div>
                         </div>
+                  
                   </div>
             </div>
       </div>

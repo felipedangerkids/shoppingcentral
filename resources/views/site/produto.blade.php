@@ -1,6 +1,7 @@
 @extends('layouts.site')
 
 @section('content')
+<meta property="og:image" content="//cdn.example.com/uploads/images/webpage_300x200.png">
 <section class="top">
       <div class="img-product">
             <img src="{{ asset('storage/products/'. $produto->image) }}" alt="">

@@ -10,7 +10,7 @@ class Estabelecimento extends Model
     use HasFactory;
 
     protected $fillable = [
-        'user_id', 'name', 'segmento', 'delivery', 'telefone', 'whatsapp', 'logo', 'time'
+        'user_id', 'name', 'segmento', 'delivery', 'telefone', 'whatsapp', 'logo', 'time', 'ifood'
     ];
 
     public function user()

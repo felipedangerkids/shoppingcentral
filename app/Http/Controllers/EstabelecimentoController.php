@@ -65,7 +65,8 @@ class EstabelecimentoController extends Controller
             'telefone' => $fone,
             'whatsapp' => $whats,
             'logo' => $name,
-            'time' => $data['time']
+            'time' => $data['time'],
+            'ifood' => $data['ifood']
         ]);
 
         return redirect()->back()->with('success', 'Produto criado com sucesso!');
@@ -77,16 +78,19 @@ class EstabelecimentoController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show()
     {
-        //
+        $id = auth()->user()->id;
+        $estabelecimento = Estabelecimento::find($id);
+        // dd($estabelecimento);
+        return view('cliente.estabelecimento.show', compact('estabelecimento'));
     }
 
 
     public function teste()
     {
         $id = auth()->user()->id;
-        $user = User::with('estabelecimento')->find(1);
+        $user = User::with('estabelecimento')->find($id);
         dd($user);
     }
     /**
@@ -97,7 +101,6 @@ class EstabelecimentoController extends Controller
      */
     public function edit($id)
     {
-        //
     }
 
     /**
@@ -109,7 +112,52 @@ class EstabelecimentoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $estabelecimento = Estabelecimento::find($id);
+        $user  =  auth()->user()->id;
+        $data = $request->all();
+
+        $telefone = str_replace(' ', '', $data['telefone']);
+        $whatsapp = str_replace(' ', '', $data['whatsapp']);
+
+        $fone = str_replace('-', '', $telefone);
+        $whats = str_replace('-', '', $whatsapp);
+
+        if ($request->logo != '') {
+            $path = storage_path('app/public/logos/');
+
+            //code for remove old file
+            if ($estabelecimento->logo != ''  && $estabelecimento->logo != null) {
+                $file_old = $path . $estabelecimento->logo;
+                unlink($file_old);
+            }
+
+            //upload new file
+            $img = ImageManagerStatic::make($data['logo']);
+
+
+            $name = Str::random() . '.jpg';
+
+            $originalPath = storage_path('app/public/logos/');
+
+            $img->save($originalPath . $name);
+
+            //for update in table
+            $estabelecimento->update(['logo' => $name]);
+        }
+
+        
+        $estabelecimento->name =  $request->get('name');
+        $estabelecimento->segmento = $request->get('segmento');
+        $estabelecimento->delivery = $request->get('delivery');
+        $estabelecimento->telefone = $fone;
+        $estabelecimento->whatsapp = $whats;
+        // $estabelecimento->logo = $request->get('country');
+        $estabelecimento->time = $request->get('time');
+        $estabelecimento->ifood = $request->get('ifood');
+        $estabelecimento->save();
+
+
+        return redirect()->back()->with('success', 'Estabelecimento alterado com sucesso!');
     }
 
     /**

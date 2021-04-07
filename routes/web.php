@@ -33,6 +33,8 @@ Route::middleware(['auth:sanctum', 'verified'])->any('/product-delete/{id}', [Pr
 Route::middleware(['auth:sanctum', 'verified'])->get('/product-list', [ProdutoController::class, 'index']);
 
 Route::middleware(['auth:sanctum', 'verified'])->post('estabelecimento-store', [EstabelecimentoController::class, 'store']);
+Route::middleware(['auth:sanctum', 'verified'])->post('estabelecimento-update/{id}', [EstabelecimentoController::class, 'update']);
+Route::middleware(['auth:sanctum', 'verified'])->get('estabelecimento-show', [EstabelecimentoController::class, 'show']);
 Route::middleware(['auth:sanctum', 'verified'])->get('teste', [EstabelecimentoController::class, 'teste']);
 
 

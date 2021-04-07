@@ -42,8 +42,14 @@
                         <p class="mt-4 font-bold text-xl uppercase">Cadastrar Estabelecimento</p>
                   </div>
 
+           
 
 
+
+                 <a href="{{ url('estabelecimento-show') }}"> <div class="text-center @if ($user->estabelecimento->count() == 0) hidden @endif py-2">
+                        <img width="100" class="mx-auto" src="{{ url('assets/img/botao.png') }}" alt="">
+                        <p class="mt-4 font-bold text-xl uppercase">Ver Estabelecimento</p>
+                  </div> </a>
 
                   <div class="text-center @if ($user->estabelecimento->count() == 0) hidden @endif py-2 abrir-modal">
                         <img width="100" class="mx-auto" src="{{ url('assets/img/botao.png') }}" alt="">

@@ -4,25 +4,25 @@
 <section>
       <div class="container delivery-base grid grid-cols-3">
             <div>
-                  <a href="{{ url('delivery') }}">
+                  <a href="{{ url('gastronomia') }}">
                         <div class="delivery  bg-roxo">
-                              <img class="mx-auto my-auto w-1/4" src="{{ url('assets/img/delivery.svg') }}" alt="">
-                              <h2>Delivery</h2>
+                              <img class="mx-auto my-auto w-1/4" src="{{ url('assets/img/gastronomia.svg') }}" alt="">
+                              <h2>Gastronomia</h2>
                         </div>
                   </a>
             </div>
             <div>
-                  <a href="{{ url('delivery') }}">
+                  <a href="{{ url('gastronomia') }}">
                         <div class="bg-cinza py-10">
-                              <h2 class="mx-auto ">Delivery</h2>
+                              <h2 class="mx-auto ">Gastronomia</h2>
                         </div>
                   </a>
 
             </div>
             <div>
-                  <a href="{{ url('delivery') }}">
+                  <a href="{{ url('gastronomia') }}">
                         <div class="bg-roxo-escuro py-10">
-                              <h2 class="mx-auto">Delivery</h2>
+                              <h2 class="mx-auto">Gastronomia</h2>
                         </div>
                   </a>
             </div>

@@ -5,6 +5,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
       <script src="https://kit.fontawesome.com/0ab2bcde1c.js" crossorigin="anonymous"></script>
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link rel="shortcut icon" href="{{ url('assets/img/favicon.ico') }}" />
