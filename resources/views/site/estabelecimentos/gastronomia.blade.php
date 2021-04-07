@@ -14,7 +14,7 @@
             <div>
                   <a href="{{ url('gastronomia') }}">
                         <div class="bg-cinza py-10">
-                              <h2 class="mx-auto ">Gastronomia</h2>
+                             
                         </div>
                   </a>
 
@@ -22,7 +22,7 @@
             <div>
                   <a href="{{ url('gastronomia') }}">
                         <div class="bg-roxo-escuro py-10">
-                              <h2 class="mx-auto">Gastronomia</h2>
+                             
                         </div>
                   </a>
             </div>

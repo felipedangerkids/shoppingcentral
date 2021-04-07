@@ -18,9 +18,9 @@
                         {{ csrf_field() }}
                   </form>
             </div>
-            <div class="">
+            {{-- <div class="">
                   <img width="120" src="{{ url('assets/img/domingos.jpg') }}" alt="">
-            </div>
+            </div> --}}
 
       </div>
 </section>
