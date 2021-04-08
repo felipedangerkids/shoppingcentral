@@ -8,13 +8,13 @@
                         <tr>
                               <th
                                     class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">
-                                    Produto</th>
+                                    Nome</th>
                               <th
                                     class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">
-                                    Preço</th>
+                                    WhatsApp</th>
                               <th
                                     class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">
-                                    Tempo</th>
+                                    Telefone</th>
                               <th
                                     class="p-3 font-bold uppercase bg-gray-200 text-gray-600 border border-gray-300 hidden lg:table-cell">
                                     Ações</th>
