@@ -159,7 +159,7 @@ class EstabelecimentoController extends Controller
         $estabelecimento->save();
 
 
-        return redirect()->back()->with('success', 'Estabelecimento alterado com sucesso!');
+        return redirect()->route('cliente')->with('success', 'Estabelecimento alterado com sucesso!');
     }
 
     /**
