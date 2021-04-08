@@ -35,6 +35,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/product-list', [ProdutoCo
 Route::middleware(['auth:sanctum', 'verified'])->post('estabelecimento-store', [EstabelecimentoController::class, 'store']);
 Route::middleware(['auth:sanctum', 'verified'])->post('estabelecimento-update/{id}', [EstabelecimentoController::class, 'update']);
 Route::middleware(['auth:sanctum', 'verified'])->get('estabelecimento-show', [EstabelecimentoController::class, 'show']);
+Route::middleware(['auth:sanctum', 'verified'])->get('estabelecimento-edit/{id}', [EstabelecimentoController::class, 'edit']);
 Route::middleware(['auth:sanctum', 'verified'])->get('teste', [EstabelecimentoController::class, 'teste']);
 
 

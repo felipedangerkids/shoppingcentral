@@ -81,9 +81,9 @@ class EstabelecimentoController extends Controller
     public function show()
     {
         $id = auth()->user()->id;
-        $estabelecimento = Estabelecimento::find($id);
+        $estabelecimentos = Estabelecimento::where('user_id', $id)->get();
         // dd($estabelecimento);
-        return view('cliente.estabelecimento.show', compact('estabelecimento'));
+        return view('cliente.estabelecimento.show', compact('estabelecimentos'));
     }
 
 
@@ -101,6 +101,8 @@ class EstabelecimentoController extends Controller
      */
     public function edit($id)
     {
+        $estabelecimento = Estabelecimento::find($id);
+        return view('cliente.estabelecimento.edit', compact('estabelecimento'));
     }
 
     /**
