@@ -636,7 +636,6 @@ table {
   background-image: url("/./assets/img/background.png");
   position: relative;
   width: 100vw;
-  height: 30%;
   top: 8px;
   background-color: #3f3e3e;
   background-position: center;
@@ -648,7 +647,6 @@ table {
 }
 
 .img-cardapio img {
-  height: 120px;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -678,7 +676,6 @@ table {
 
 .img-logo-alt {
   text-align: -webkit-center;
-  height: auto;
 }
 
 .img-logo-alt img {
@@ -686,8 +683,9 @@ table {
 }
 
 .logo-client {
-  height: 20vh;
-  width: 40vw;
+  height: 100%;
+  margin: 0 10px;
+  width: 125px;
 }
 
 .logo-client img {
@@ -721,24 +719,18 @@ table {
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
 .products-grid p {
   margin-top: 10px;
 }
 
 .img-product {
   position: absolute;
-  top: 50px;
   z-index: -1;
   width: 100%;
 }
 
 .img-product img {
   width: 100%;
-  height: 45vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -750,7 +742,7 @@ table {
 
 .home-base {
   text-align: center;
-  height: 15vh;
+  height: 100%;
   margin-top: 8px;
 }
 
@@ -764,7 +756,8 @@ table {
 
 .home-base-2 {
   text-align: center;
-  height: 32vh;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
 }
 
 .home-base-2 h2 {
@@ -777,8 +770,8 @@ table {
 
 .home-base-3 {
   text-align: center;
-  height: 25vh;
-  margin-top: 18px;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
 .home-base-3 h2 {
@@ -791,11 +784,6 @@ table {
 
 .delivery-base {
   text-align: center;
-  height: 15vh;
-}
-
-.delivery-base div {
-  height: 100%;
 }
 
 .delivery-base h2 {
@@ -808,19 +796,17 @@ table {
 
 .delivery-base-2 {
   text-align: center;
-}
-
-.delivery-base-2 div {
-  height: 100%;
-  padding: 5.3125em 0;
+  height: 150px;
 }
 
 .delivery-base-2 h2 {
   color: white;
   font-weight: bold;
   font-size: 1.1em;
-  padding-top: 8px;
+  padding-top: 75px;
+  padding-bottom: 75px;
   text-transform: uppercase;
+  margin: 0 auto;
 }
 
 .bg-cinza {
@@ -845,40 +831,58 @@ table {
 
 .delivery {
   background-color: #6c1cd1;
-  padding: 40px 0;
+  padding: 2.6em 0;
 }
 
 .gastronomia {
   background-color: #f75111;
-  padding: 2.5em 0;
+  padding: 2.6em 0;
 }
 
 .loja {
   background-color: #230a44;
-  padding: 36px 0;
+  padding: 2.6em 0;
 }
 
 .estetica {
   background-color: #e41d7f;
-  padding: 40px 0;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 2.4em 0;
 }
 
 .cadastro {
   background-color: #6c1cd1;
-  padding: 34px 0;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 2.4em 0;
 }
 
 .mes {
   background-color: #372b2b;
-  padding: 4em 0;
+  grid-row: span 2 / span 2;
+  height: 250px;
 }
 
 .pontos {
   background-color: #f75111;
-  padding: 4em 0;
+  grid-row: span 2 / span 2;
+  padding: 2.9em 0;
 }
 
 .banner {
-  margin-top: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+.top-cardapio {
+  height: 250px;
+}
+
+.toltip {
+  width: 100%;
+  left: -58px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -7,7 +7,7 @@
             <img src="{{ asset('storage/products/'. $produto->image) }}" alt="">
       </div>
 </section>
-<section class="desc mt-3 mx-5">
+<section class="desc mt-36 mx-5">
       <div class="uppercase text-2xl font-bold">
             <h2>{{ $produto->name }}</h2>
       </div>

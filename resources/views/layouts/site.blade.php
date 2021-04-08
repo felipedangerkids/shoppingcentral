@@ -22,7 +22,7 @@
 
 <body>
       <div id="top" class="color-change-4x"></div>
-      <section>
+  
             @if (Request::path() != '/')
             <div class="header flex py-5">
 
@@ -47,11 +47,11 @@
 
             </div>
             @endif
-      </section>
+    
 
       @yield('content')
 
-      <div id="bottom"></div>
+    
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>

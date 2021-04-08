@@ -5,15 +5,15 @@
       <div class="container delivery-base grid grid-cols-3">
             <div>
                   <a href="{{ url('cosmeticos') }}">
-                        <div class="delivery bg-roxo">
+                        <div class="delivery h-full bg-roxo">
                               <img class="mx-auto my-auto w-1/4" src="{{ url('assets/img/estetica.svg') }}" alt="">
-                              <h2>Delivery</h2>
+                              <h2>Estética</h2>
                         </div>
                   </a>
             </div>
             <div>
                   <a href="{{ url('cosmeticos') }}">
-                        <div class="bg-cinza py-10">
+                        <div class="bg-cinza h-full py-10">
                               <h2 class="mx-auto "></h2>
                         </div>
                   </a>
@@ -21,7 +21,7 @@
             </div>
             <div>
                   <a href="{{ url('cosmeticos') }}">
-                        <div class="bg-roxo-escuro py-10">
+                        <div class="bg-roxo-escuro h-full py-10">
                               <h2 class="mx-auto"></h2>
                         </div>
                   </a>

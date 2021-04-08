@@ -132,7 +132,6 @@ $roxo-escuro: #230a44;
 $rosa: #e41d7f;
 $cinza: #372b2b;
 
-
 #top {
       background-image: url("/./assets/img/faixa.png");
       position: absolute;
@@ -148,7 +147,7 @@ $cinza: #372b2b;
       background-image: url("/./assets/img/background.png");
       position: relative;
       width: 100vw;
-      height: 30%;
+
       top: 8px;
       background-color: #3f3e3e;
       background-position: center; /* Center the image */
@@ -158,7 +157,6 @@ $cinza: #372b2b;
 
 .img-cardapio {
       img {
-            height: 120px;
             object-fit: cover;
             width: 100%;
       }
@@ -173,14 +171,13 @@ $cinza: #372b2b;
 .img-logo {
       width: 223px;
       height: auto;
-   
 
       img {
             width: 100%;
       }
 }
-.voltar{
-      a{
+.voltar {
+      a {
             text-decoration: none;
             color: white;
             font-size: 2.3em;
@@ -188,15 +185,16 @@ $cinza: #372b2b;
 }
 .img-logo-alt {
       text-align: -webkit-center;
-      height: auto;
+
       img {
             width: 70%;
       }
 }
 .logo-client {
-      height: 20vh;
-      width: 40vw;
-      img{
+      height: 100%;
+      margin: 0 10px;
+      width: 125px;
+      img {
             height: 100%;
             width: 100%;
             object-fit: cover;
@@ -227,9 +225,7 @@ $cinza: #372b2b;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-      visibility: visible;
-}
+
 .products-grid {
       p {
             margin-top: 10px;
@@ -237,13 +233,13 @@ $cinza: #372b2b;
 }
 .img-product {
       position: absolute;
-      top: 50px;
+      
       z-index: -1;
       width: 100%;
 
       img {
             width: 100%;
-            height: 45vh;
+
             object-fit: cover;
       }
 }
@@ -253,7 +249,7 @@ $cinza: #372b2b;
 }
 .home-base {
       text-align: center;
-      height: 15vh;
+      height: 100%;
       margin-top: 8px;
 
       h2 {
@@ -266,7 +262,7 @@ $cinza: #372b2b;
 }
 .home-base-2 {
       text-align: center;
-      height: 32vh;
+      grid-template-rows: 50% 50%;
       h2 {
             color: white;
             font-weight: bold;
@@ -277,8 +273,8 @@ $cinza: #372b2b;
 }
 .home-base-3 {
       text-align: center;
-      height: 25vh;
-      margin-top: 18px;
+      grid-template-rows: 1fr 1fr;
+
       h2 {
             color: white;
             font-weight: bold;
@@ -289,11 +285,7 @@ $cinza: #372b2b;
 }
 .delivery-base {
       text-align: center;
-      height: 15vh;
-    
-      div {
-            height: 100%;
-      }
+
       h2 {
             color: white;
             font-weight: bold;
@@ -304,70 +296,76 @@ $cinza: #372b2b;
 }
 .delivery-base-2 {
       text-align: center;
-    
-    
-      div {
-            height: 100%;
-            padding: 5.3125em 0;
-      }
+      height: 150px;
       h2 {
             color: white;
             font-weight: bold;
             font-size: 1.1em;
-            padding-top: 8px;
+            padding-top: 75px;
+            padding-bottom: 75px;
             text-transform: uppercase;
+            margin: 0 auto;
       }
 }
 
-.bg-cinza{
+.bg-cinza {
       background-color: $cinza;
 }
-.bg-roxo{
+.bg-roxo {
       background-color: $roxo;
 }
-.bg-laranja{
+.bg-laranja {
       background-color: $laranja;
 }
-.bg-roxo-escuro{
+.bg-roxo-escuro {
       background-color: $roxo-escuro;
 }
-.bg-rosa{
+.bg-rosa {
       background-color: $rosa;
 }
-
-
-
-
 
 .delivery {
       background-color: $roxo;
-      padding: 40px 0;
+      padding: 2.6em 0;
 }
 .gastronomia {
       background-color: $laranja;
-      padding: 2.5em 0;
+      padding: 2.6em 0;
 }
 .loja {
       background-color: $roxo-escuro;
-      padding: 36px 0;
+      padding: 2.6em 0;
 }
 .estetica {
       background-color: $rosa;
-      padding: 40px 0;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      padding: 2.4em 0;
 }
 .cadastro {
       background-color: $roxo;
-      padding: 34px 0;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      padding: 2.4em 0;
 }
 .mes {
       background-color: $cinza;
-
-      padding: 4em 0;
+      grid-row: span 2 / span 2;
+      height: 250px;
 }
 .pontos {
       background-color: $laranja;
-      padding: 4em 0;
+      grid-row: span 2 / span 2;
+      padding: 2.9em 0;
 }
 .banner {
-      margin-top: 1px;
+      width: 100%;
+      height: 100%;
+}
+.top-cardapio {
+      height: 250px;
+}
+.toltip {
+      width: 100%;
+      left: -58px;
 }
