@@ -28,7 +28,7 @@
 
             <div class="home-base-2 container grid grid-cols-3">
                   <div class="col-span-2 row-span-full">
-                        <img class="object-cover banner" src="{{ url('assets/img/banner.jpg') }}" alt="">
+                        <img class="object-cover banner" src="{{ url('assets/img/banner.png') }}" alt="">
                   </div>
                   <div class="flex flex-col ">
                         <a href="{{ url('cosmeticos') }}">

@@ -44,7 +44,6 @@ class EstabelecimentoController extends Controller
         // $price = str_replace(['.', ','], ['', '.'], $data['price']);
         $img = ImageManagerStatic::make($data['logo']);
 
-
         $name = Str::random() . '.jpg';
 
         $originalPath = storage_path('app/public/logos/');
@@ -148,7 +147,7 @@ class EstabelecimentoController extends Controller
         }
 
         
-        $estabelecimento->name =  $request->get('name');
+        $estabelecimento->name =     $request->get('name');
         $estabelecimento->segmento = $request->get('segmento');
         $estabelecimento->delivery = $request->get('delivery');
         $estabelecimento->telefone = $fone;

@@ -105,6 +105,7 @@ section {
 }
 body {
       line-height: 1;
+      background-color: #181717;
 }
 ol,
 ul {
@@ -351,12 +352,12 @@ $cinza: #372b2b;
 .mes {
       background-color: $cinza;
       grid-row: span 2 / span 2;
-      height: 250px;
+      height: 200px;
 }
 .pontos {
       background-color: $laranja;
       grid-row: span 2 / span 2;
-      padding: 2.9em 0;
+      padding: 2.5em 0;
 }
 .banner {
       width: 100%;
