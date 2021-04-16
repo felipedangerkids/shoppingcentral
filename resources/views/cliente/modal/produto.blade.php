@@ -52,6 +52,18 @@
                                           id="cus_name" name="time" type="text" required=""
                                           placeholder="Tempo de Entrega" aria-label="Name">
                               </div>
+                              <div class="py-2">
+                                    <select
+                                          class="autoexpand tracking-wide py-2 px-4 mb-3 leading-relaxed appearance-none block w-full bg-gray-200 border border-gray-200 rounded focus:outline-none focus:bg-white focus:border-gray-500"
+                                          name="category_id" id="">
+                                          <option>Categoria</option>
+                                          @foreach ($user->categoria as $cat)
+                                             <option value="{{ $cat->id }}">{{ $cat->name }}</option> 
+                                          @endforeach
+                                          
+                                      
+                                    </select>
+                              </div>
 
 
                   </div>

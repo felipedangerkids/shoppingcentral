@@ -80,6 +80,22 @@ closeModal4.forEach(close => {
 });
 
 
+const modal6 = document.querySelector('.modal-categoria');
+
+const showModal6 = document.querySelector('.open-modal-categoria');
+const closeModal6 = document.querySelectorAll('.categoria-close');
+
+showModal6.addEventListener('click', function () {
+      modal6.classList.remove('hidden')
+});
+
+closeModal6.forEach(close => {
+      close.addEventListener('click', function () {
+            modal6.classList.add('hidden')
+      });
+});
+
+
 
 
 

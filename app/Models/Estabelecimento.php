@@ -22,4 +22,9 @@ class Estabelecimento extends Model
     {
         return $this->hasMany(Produto::class, 'est_id');
     }
+
+    public function categorias()
+    {
+        return $this->hasMany(Category::class);
+    }
 }

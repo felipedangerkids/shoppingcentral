@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Produto;
-use Illuminate\Support\Str;
+use App\Models\Category;
 use Illuminate\Http\Request;
-use Intervention\Image\ImageManagerStatic;
 
-class ProdutoController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,9 +14,8 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-
-        $produtos = Produto::where('user_id', auth()->user()->id)->get();
-        return view('cliente.produto.lista', compact('produtos'));
+        $categorias = Category::where('user_id', auth()->user()->id)->get();
+        return view('cliente.produto.categorias', compact('categorias'));
     }
 
     /**
@@ -41,25 +38,14 @@ class ProdutoController extends Controller
     {
         $data = $request->all();
         $user  =  auth()->user()->id;
-        $price = str_replace(['.', ','], ['', '.'], $data['price']);
-        $img = ImageManagerStatic::make($data['image']);
 
 
-        $name = Str::random() . '.jpg';
 
-        $originalPath = storage_path('app/public/products/');
-
-        $img->save($originalPath . $name);
-
-        $product = Produto::create([
-            'est_id' => $data['est'],
-            'user_id' => $user,
-            'image' => $name,
+        $product = Category::create([
             'name' => $data['name'],
-            'desc' => $data['desc'],
-            'price' => $price,
-            'time' => $data['time'],
-            'category_id' => $data['category_id']
+            'est_id' => $data['est_id'],
+            'user_id' => $user,
+
         ]);
 
         return redirect()->back()->with('success', 'Produto criado com sucesso!');
@@ -68,10 +54,10 @@ class ProdutoController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Category $category)
     {
         //
     }
@@ -79,37 +65,44 @@ class ProdutoController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Category $category, $id)
     {
-        //
+        $category = Category::find($id);
+        return view('cliente.produto.categoria-edit', compact('category'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Category $category, $id)
     {
-        //
+        $estabelecimento = Category::find($id);
+
+        $estabelecimento->name =     $request->get('name');
+        $estabelecimento->status =   $request->get('status');
+        $estabelecimento->save();
+
+        return redirect()->route('cliente')->with('success', 'Categoria alterado com sucesso!');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Category  $category
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Category $category, $id)
     {
-        $product = Produto::find($id);
+        $product = Category::find($id);
         $product->delete();
 
-        return redirect()->back()->with('success', 'Produto deletado com sucesso!'); 
+        return redirect()->back()->with('success', 'Produto deletado com sucesso!');
     }
 }

@@ -53,7 +53,7 @@ class SiteController extends Controller
     public function cliente()
     {
         $id = auth()->user()->id;
-        $user = User::with('estabelecimento')->find($id);
+        $user = User::with('estabelecimento', 'categoria')->find($id);
         $users = User::paginate(10);
         return view('cliente.index', compact('user', 'users'));
     }

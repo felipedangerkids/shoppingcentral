@@ -7,7 +7,7 @@ use Spatie\Sluggable\SlugOptions;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Produto extends Model
+class Category extends Model
 {
     use HasSlug;
 
@@ -19,8 +19,17 @@ class Produto extends Model
     }
 
     protected $fillable = [
-      'est_id', 'user_id', 'image', 'name', 'slug', 'desc', 'price', 'time', 'category_id'
+        'name',
+        'slug',
+        'est_id',
+        'user_id',
+        'status',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 
     public function estabelecimento()
     {

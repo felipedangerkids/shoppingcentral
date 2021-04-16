@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\EstabelecimentoController;
 use App\Http\Controllers\ProdutoController;
 use App\Http\Controllers\SiteController;
@@ -30,7 +31,11 @@ Route::middleware(['auth:sanctum', 'verified'])->post('/produto-store', [Produto
 Route::middleware(['auth:sanctum', 'verified'])->post('/user-store', [UserController::class, 'store']);
 Route::middleware(['auth:sanctum', 'verified'])->any('/user-delete/{id}', [UserController::class, 'destroy']);
 Route::middleware(['auth:sanctum', 'verified'])->any('/product-delete/{id}', [ProdutoController::class, 'destroy']);
+Route::middleware(['auth:sanctum', 'verified'])->any('/category-delete/{id}', [CategoryController::class, 'destroy']);
+Route::middleware(['auth:sanctum', 'verified'])->any('/category-edit/{id}', [CategoryController::class, 'edit']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/product-list', [ProdutoController::class, 'index']);
+Route::middleware(['auth:sanctum', 'verified'])->get('/categoria-list', [CategoryController::class, 'index']);
+Route::middleware(['auth:sanctum', 'verified'])->post('/categoria-update/{id}', [CategoryController::class, 'update']);
 
 Route::middleware(['auth:sanctum', 'verified'])->post('estabelecimento-store', [EstabelecimentoController::class, 'store']);
 Route::middleware(['auth:sanctum', 'verified'])->post('estabelecimento-update/{id}', [EstabelecimentoController::class, 'update']);
@@ -38,6 +43,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('estabelecimento-show', [Es
 Route::middleware(['auth:sanctum', 'verified'])->get('estabelecimento-edit/{id}', [EstabelecimentoController::class, 'edit']);
 Route::middleware(['auth:sanctum', 'verified'])->get('teste', [EstabelecimentoController::class, 'teste']);
 
+Route::middleware(['auth:sanctum', 'verified'])->post('categoria-store', [CategoryController::class, 'store']);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
