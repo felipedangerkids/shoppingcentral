@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\EstabelecimentoController;
 use App\Http\Controllers\ProdutoController;
@@ -48,3 +49,6 @@ Route::middleware(['auth:sanctum', 'verified'])->post('categoria-store', [Catego
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+Route::post('/cart-add', [CartController::class, 'cartAdd']);
