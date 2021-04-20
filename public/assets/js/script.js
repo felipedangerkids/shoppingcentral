@@ -108,3 +108,7 @@ $('#price').maskMoney({
 
 $('#telefone').mask('00 00000-0000');
 $('#whatsapp').mask('00 00000-0000');
+
+
+// Requires jQuery
+

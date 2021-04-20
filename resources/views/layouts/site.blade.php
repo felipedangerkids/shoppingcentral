@@ -20,213 +20,8 @@
       <title>Shopping Central</title>
 </head>
 <style>
-      @import url("https://fonts.googleapis.com/css?family=Barlow:900");
 
-      .component-wrapper a,
-      .screen a {
-            text-decoration: none;
-            display: contents;
-      }
 
-      .full-width-a {
-            width: 100%;
-      }
-
-      .full-height-a {
-            height: 100%;
-      }
-
-      .screen textarea:focus,
-      .screen input:focus {
-            outline: none;
-      }
-
-      .screen *,
-      .component-wrapper * {
-            box-sizing: border-box;
-            -webkit-font-smoothing: antialiased;
-      }
-
-      .screen div {
-            -webkit-text-size-adjust: none;
-      }
-
-      .container-center-vertical,
-      .container-center-horizontal {
-            pointer-events: none;
-            display: flex;
-            flex-direction: row;
-            padding: 0;
-            margin: 0;
-      }
-
-      .container-center-vertical {
-            align-items: center;
-            height: 100%;
-      }
-
-      .container-center-horizontal {
-            justify-content: center;
-            width: 100%;
-      }
-
-      .container-center-vertical>*,
-      .container-center-horizontal>* {
-            pointer-events: auto;
-            flex-shrink: 0;
-      }
-
-      .component-wrapper,
-      .screen {
-            overflow-wrap: break-word;
-            word-wrap: break-word;
-            word-break: break-all;
-            word-break: break-word;
-      }
-
-      .auto-animated div {
-            opacity: 0;
-            position: absolute;
-            --z-index: -1;
-      }
-
-      .auto-animated .container-center-vertical,
-      .auto-animated .container-center-horizontal {
-            opacity: 1;
-      }
-
-      .overlay {
-            position: absolute;
-            opacity: 0;
-            display: none;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            position: fixed;
-      }
-
-      .animate-appear {
-            opacity: 0;
-            display: block;
-            animation: reveal 0.3s ease-in-out 1 normal forwards;
-      }
-
-      .animate-disappear {
-            opacity: 1;
-            display: block;
-            animation: reveal 0.3s ease-in-out 1 reverse forwards;
-      }
-
-      .animate-nodelay {
-            animation-delay: 0s;
-      }
-
-      @keyframes reveal {
-            from {
-                  opacity: 0;
-            }
-
-            to {
-                  opacity: 1;
-            }
-      }
-
-      .align-self-flex-start {
-            align-self: flex-start;
-      }
-
-      .align-self-flex-end {
-            align-self: flex-end;
-      }
-
-      .align-self-flex-center {
-            align-self: center;
-      }
-
-      .valign-text-middle {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-      }
-
-      .valign-text-bottom {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-      }
-
-      input:focus {
-            outline: none;
-      }
-
-      .component-wrapper,
-      .component-wrapper * {
-            pointer-events: none;
-      }
-
-      .component-wrapper a *,
-      .component-wrapper a,
-      .component-wrapper input,
-      .component-wrapper video,
-      .component-wrapper iframe,
-      .listeners-active,
-      .listeners-active * {
-            pointer-events: auto;
-      }
-
-      .hidden,
-      .hidden * {
-            visibility: hidden;
-            pointer-events: none;
-      }
-
-      .smart-layers-pointers,
-      .smart-layers-pointers * {
-            pointer-events: auto;
-            visibility: visible;
-      }
-
-      .component-wrapper.not-ready,
-      .component-wrapper.not-ready * {
-            visibility: hidden !important;
-      }
-
-      .listeners-active-click,
-      .listeners-active-click * {
-            cursor: pointer;
-      }
-
-      @import url("https://fonts.googleapis.com/css?family=Barlow:900");
-
-      * {
-            box-sizing: border-box;
-      }
-
-      .barlow-black-white-18px {
-            color: var(--white);
-            font-family: var(--font-family-barlow);
-            font-size: var(--font-size-m);
-            font-style: normal;
-            font-weight: 900;
-      }
-
-      .barlow-black-white-20px {
-            color: var(--white);
-            font-family: var(--font-family-barlow);
-            font-size: var(--font-size-l);
-            font-style: normal;
-            font-weight: 900;
-      }
-
-      :root {
-            --font-family-barlow: "Barlow", Helvetica;
-            --font-size-l: 20px;
-            --font-size-m: 18px;
-            --international-orange: rgba(247, 81, 17, 1);
-            --purple-heart: rgba(108, 28, 209, 1);
-            --violet: rgba(35, 10, 68, 1);
-            --white: rgba(255, 255, 255, 1);
-      }
 </style>
 
 <body style="margin: 0; background: rgba(25, 25, 25, 1)">
@@ -246,6 +41,7 @@
                                     </div>
                               </div>
                         </div>
+
                         <div class="rectangle-21-4eduM0"></div>
                         <div class="storiestopo-4eduM0">
                               <div class="stories-RXWVqI">
@@ -268,10 +64,32 @@
                               </div>
                               <div class="boticrio-i566537-uxFvNA barlow-black-white-20px">Boticário</div>
                         </div>
-                        <div class="inconemenu-4eduM0"></div>
+                        <div class="menu">
+                              <a class="inconemenu-4eduM0 trigger" href="#"><div id="menu-toggle" class="inconemenu-4eduM0 menuBtn"></div></a>
+                              <a class="inconemenu-4eduM0 close" href="#">&times;</a>
+                        </div>
+                   
+
                         <img class="group-8-4eduM0" src="{{ url('assets/img/group-8@2x.svg') }}" />
+
                         <div class="iconeperfil-4eduM0"></div>
                   </div>
+                  <div class="drop-down">
+                        <nav role='navigation'>
+                              <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Delivery</a></li>
+                                    <li><a href="#">Cosméticos</a></li>
+                                    <li><a href="#">Lojas</a></li>
+                                    <li><a href="#">Gastronomia</a></li>
+                              </ul>
+                        </nav>
+                        <div class="menu">
+                        
+                              <a class="close" href="#">&times;</a>
+                        </div>
+                  </div>
+
                   @yield('content')
             </div>
       </div>
@@ -295,6 +113,18 @@
           }).catch(swal.noop);
       </script>
       @endif
+
+      <script>
+            $('.menu a').click(function(){
+
+$('.trigger').toggle();
+// $('.menu').toggleClass('round');
+$('.close').toggle();
+$('.drop-down').toggleClass('down');
+
+
+});
+      </script>
 </body>
 
 </html>
