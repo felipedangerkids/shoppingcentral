@@ -1,7 +1,7 @@
 @extends('layouts.site')
 
 @section('content')
-<img class="banner-home-img-0xy0vn" src="{{ url('assets/img/banner-home-img@2x.png') }}" />
+
 <div class="overlap-group3-0xy0vn">
       <a href="{{ url('delivery') }}">
             <div class="fundo-roxo-GW1jy1"></div>

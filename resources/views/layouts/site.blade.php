@@ -15,6 +15,8 @@
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Add the slick-theme.css if you want default styling -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/main.min.css') }}">
@@ -69,22 +71,23 @@
           <div class="iconeperfil-y1HRxC"></div>
           <div class="logo-shop-y1HRxC"></div>
         </div>
-      @yield('content')
+        <img class="banner-home-img-0xy0vn" src="{{ url('assets/img/banner-home-img@2x.png') }}" />
+        @yield('content')
+      </div>
     </div>
-  </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-  <script src="{{ url('assets/js/jquery.maskMoney.min.js') }}"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
-  </script>
-  <script src="{{ asset('assets/js/script.js') }}"></script>
-  @if(Session::has('success'))
-  <script type="text/javascript">
-    Swal.fire({
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="{{ url('assets/js/jquery.maskMoney.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script>
+    <script src="{{ asset('assets/js/script.js') }}"></script>
+    @if(Session::has('success'))
+    <script type="text/javascript">
+      Swal.fire({
           icon: 'success',
           title: 'Muito bom!',
           text: "{{Session::get('success')}}",
@@ -92,11 +95,11 @@
           }).then((value) => {
           location.reload();
           }).catch(swal.noop);
-  </script>
-  @endif
+    </script>
+    @endif
 
-  <script>
-    $('.menu a').click(function(){
+    <script>
+      $('.menu a').click(function(){
 
 $('.trigger').toggle();
 // $('.menu').toggleClass('round');
@@ -105,7 +108,7 @@ $('.drop-down').toggleClass('down');
 
 
 });
-  </script>
+    </script>
 </body>
 
 </html>
