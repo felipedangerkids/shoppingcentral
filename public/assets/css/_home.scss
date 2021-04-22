@@ -1,102 +1,3 @@
-$blue:rgb(44, 40, 40);
-
-.drop-down{
-  padding: 25px 25px;
-  position: absolute;
-  width: 100%;
-  height: auto;
-  z-index: 10;
-  background: $blue;
-  top:-100%;
-    transition: top 0.4s ease-in-out;
-  text-shadow: 1px 1px 1px darken($blue, 15%);
-  box-shadow: 0 0 10px 2px #000;
-  li{
-     height: 50px;
-    line-height: 50px;
-    border-bottom: 1px solid lighten($blue, 5%);
-    border-top: 1px solid darken($blue, 5%);
-    text-align: center;
-
-    &:nth-child(1){
-     border-top: 0; 
-    }
-    &:nth-child(4){
-     border-bottom: 0; 
-    }
-    &:hover{
-       background: darken($blue, 10%); 
-    }
-  }
-  a{
-      display: block;
-      font-size: 18pt;
-      color:#fff;
-      text-decoration: none;
-      font-family: 'Carrois Gothic', sans-serif;
-  }
-  h1{
-      font-family: 'Kotta One', serif;
-      font-size: 22pt;
-      text-align: center;
-      color: #fff;
-  }
-}
-.down{
- top: 0;
-    transition:top 0.4s ease-in-out;
-}
-.menu{
-
-  a{
-    display: block;
-    text-decoration: none;
-    font-size: 48pt;
-    font-weight: bold;
-    color:#fff;
-    margin: 0 auto;
-    
-  } 
-  .close{
-     display: none; 
-  }
-  
-}
-.trigger{
-  animation: menu-spin-back 0.4s ease-in-out;
-  animation-fill-mode: forwards; 
-}
-.round{
-
-animation: menu-spin 0.4s ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes menu-spin{
-    50%{
-      border-radius: 100%;
-      
-   }
-  100%{
-          border-radius: 100%;
-
-   transform: rotate(180deg); 
-  }
-}
-@-webkit-keyframes menu-spin-back{
-   50%{
-      border-radius: 0;
-      
-   }
-  100%{
-          border-radius: 0;
-   transform: rotate(-180deg); 
-  }
-}
-.white{
-  border-color: #fff;
-  color: #fff !important;
-}
 /* screen - shop-app-home */
 
 .shop-app-home {
@@ -112,7 +13,7 @@ animation: menu-spin 0.4s ease-in-out;
   position: relative;
   width: 414px;
 }
-.shop-app-home .agenda-do-ms-eSNWXa {
+.shop-app-home .agenda-do-ms-nlxkfa {
   background-color: transparent;
   height: auto;
   left: 31px;
@@ -120,10 +21,59 @@ animation: menu-spin 0.4s ease-in-out;
   line-height: 20.2px;
   position: absolute;
   text-align: left;
-  top: 70px;
+  top: 74px;
   width: 88px;
 }
-.shop-app-home .barracolorida-4eduM0 {
+.shop-app-home .banner-home-img-0xy0vn {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 173px;
+  margin-top: 0px;
+  object-fit: cover;
+  position: relative;
+  width: 414px;
+}
+.shop-app-home .banner-main-img-0PZcXW {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 270px;
+  object-fit: cover;
+  position: relative;
+  width: 276px;
+}
+.shop-app-home .barra-azul-svg-cBBgRE {
+  background-color: var(--purple-heart);
+  height: 8px;
+  left: 103px;
+  position: absolute;
+  top: 0px;
+  width: 106px;
+}
+.shop-app-home .barra-branca-svg-0Ia9xa {
+  background-color: var(--white);
+  height: 8px;
+  left: 100px;
+  position: absolute;
+  top: 0px;
+  width: 105px;
+}
+.shop-app-home .barra-rosa-svg-0Ia9xa {
+  background-color: rgba(228,29,127,1.0);
+  height: 8px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 105px;
+}
+.shop-app-home .barra-vermelha-svg-cBBgRE {
+  background-color: var(--international-orange);
+  height: 8px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 105px;
+}
+.shop-app-home .barracolorida-y1HRxC {
   align-items: flex-start;
   background-color: transparent;
   box-sizing: border-box;
@@ -137,7 +87,7 @@ animation: menu-spin 0.4s ease-in-out;
   top: 0px;
   width: auto;
 }
-.shop-app-home .boticrio-i545537-RXWVqI {
+.shop-app-home .boticrio-i545537-bkBUvi {
   background-color: transparent;
   flex-shrink: 1;
   height: auto;
@@ -150,7 +100,7 @@ animation: menu-spin 0.4s ease-in-out;
   text-align: center;
   width: 104px;
 }
-.shop-app-home .boticrio-i552537-hb2xV8 {
+.shop-app-home .boticrio-i8548537-cVM2MY {
   background-color: transparent;
   flex-shrink: 1;
   height: auto;
@@ -163,7 +113,7 @@ animation: menu-spin 0.4s ease-in-out;
   text-align: center;
   width: 104px;
 }
-.shop-app-home .boticrio-i566537-uxFvNA {
+.shop-app-home .boticrio-i8555537-xmYI7Q {
   background-color: transparent;
   flex-shrink: 1;
   height: auto;
@@ -176,19 +126,91 @@ animation: menu-spin 0.4s ease-in-out;
   text-align: center;
   width: 104px;
 }
-.shop-app-home .cadastro-4a9k2Y {
+.shop-app-home .cadastro-YUXJ3i {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 65px;
+  justify-content: flex-start;
+  left: 33px;
+  min-width: 65px;
+  position: absolute;
+  top: 24px;
+  width: auto;
+}
+.shop-app-home .cadastro-svg-RYVSPh {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 65px;
+  justify-content: flex-start;
+  min-width: 65px;
+  position: relative;
+  width: auto;
+}
+.shop-app-home .cadastro-xMQYUC {
   background-color: transparent;
   height: auto;
-  left: 300px;
+  left: 24px;
   letter-spacing: 0.00px;
   line-height: 20.2px;
   position: absolute;
   text-align: center;
-  top: 235px;
+  top: 100px;
   white-space: nowrap;
   width: auto;
 }
-.shop-app-home .delivery-RH0WJ5 {
+.shop-app-home .circulo-interno-svg-RBhHiT {
+  background-color: transparent;
+  height: 96px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.shop-app-home .circulo-interno-svg-jhxcxO {
+  background-color: transparent;
+  height: 96px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.shop-app-home .circulo-interno-svg-lXOMxY {
+  background-color: transparent;
+  height: 96px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 96px;
+}
+.shop-app-home .circulo-svg-bkBUvi {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 96px;
+  position: relative;
+  width: 96px;
+}
+.shop-app-home .circulo-svg-cVM2MY {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 96px;
+  position: relative;
+  width: 96px;
+}
+.shop-app-home .circulo-svg-xmYI7Q {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 96px;
+  position: relative;
+  width: 96px;
+}
+.shop-app-home .delivery-GW1jy1 {
   background-color: transparent;
   height: auto;
   left: 15px;
@@ -200,34 +222,26 @@ animation: menu-spin 0.4s ease-in-out;
   white-space: nowrap;
   width: 111px;
 }
-.shop-app-home .ellipse-2-5Gam2Z {
+.shop-app-home .delivery-svg-Coh1t5 {
   background-color: transparent;
-  height: 96px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 96px;
+  flex-shrink: 1;
+  height: 34px;
+  margin-top: -0.4px;
+  position: relative;
+  width: 49px;
 }
-.shop-app-home .ellipse-2-QfrZdW {
+.shop-app-home .estetica-svg-weG7u3 {
   background-color: transparent;
-  height: 96px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 96px;
+  flex-shrink: 1;
+  height: 57px;
+  margin-top: -0.33px;
+  position: relative;
+  width: 57px;
 }
-.shop-app-home .ellipse-2-o2nuKq {
-  background-color: transparent;
-  height: 96px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 96px;
-}
-.shop-app-home .esttica-4a9k2Y {
+.shop-app-home .esttica-prdjcR {
   background-color: transparent;
   height: auto;
-  left: 305px;
+  left: 29px;
   letter-spacing: 0.00px;
   line-height: 20.2px;
   position: absolute;
@@ -236,7 +250,125 @@ animation: menu-spin 0.4s ease-in-out;
   white-space: nowrap;
   width: auto;
 }
-.shop-app-home .gastronomia-RH0WJ5 {
+.shop-app-home .flex-col-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 620px;
+  position: relative;
+  width: 414px;
+}
+.shop-app-home .flex-col-Xi618D {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 0px;
+  min-height: 453px;
+  position: relative;
+  width: 138px;
+}
+.shop-app-home .flex-col-dXBp89 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 453px;
+  position: relative;
+  width: 276px;
+}
+.shop-app-home .flex-row-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 453px;
+  justify-content: flex-start;
+  margin-top: 0px;
+  min-width: 414px;
+  position: relative;
+  width: auto;
+}
+.shop-app-home .fundo-cinza-nlxkfa {
+  background-color: rgba(55,43,43,1.0);
+  height: 183px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 276px;
+}
+.shop-app-home .fundo-preto-GW1jy1 {
+  background-color: rgba(35,10,68,1.0);
+  height: 135px;
+  left: 276px;
+  position: absolute;
+  top: 0px;
+  width: 138px;
+}
+.shop-app-home .fundo-rosa-prdjcR {
+  background-color: rgba(228,29,127,1.0);
+  height: 135px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 138px;
+}
+.shop-app-home .fundo-roxo-GW1jy1 {
+  background-color: var(--purple-heart);
+  height: 135px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 138px;
+}
+.shop-app-home .fundo-roxo-xMQYUC {
+  background-color: var(--purple-heart);
+  height: 135px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 138px;
+}
+.shop-app-home .fundo-vermelho-8SqM8O {
+  background-color: var(--international-orange);
+  height: 183px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 138px;
+}
+.shop-app-home .fundo-vermelho-GW1jy1 {
+  background-color: var(--international-orange);
+  height: 135px;
+  left: 138px;
+  position: absolute;
+  top: 0px;
+  width: 138px;
+}
+.shop-app-home .gastro-svg-aIZ2L6 {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 34px;
+  margin-top: -0.4px;
+  position: relative;
+  width: 45px;
+}
+.shop-app-home .gastronomia-GW1jy1 {
   background-color: transparent;
   height: auto;
   left: 147px;
@@ -248,7 +380,7 @@ animation: menu-spin 0.4s ease-in-out;
   white-space: nowrap;
   width: auto;
 }
-.shop-app-home .group-11-HIUWuo {
+.shop-app-home .group-11-Xs8u4z {
   align-items: flex-start;
   background-color: transparent;
   box-sizing: border-box;
@@ -261,15 +393,27 @@ animation: menu-spin 0.4s ease-in-out;
   position: relative;
   width: auto;
 }
-.shop-app-home .group-8-4eduM0 {
+.shop-app-home .group-Bllyls {
+  align-items: flex-start;
   background-color: transparent;
-  height: 112px;
-  left: 102px;
-  position: absolute;
-  top: 25px;
-  width: 196px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 65px;
+  justify-content: flex-start;
+  min-width: 57px;
+  position: relative;
+  width: auto;
 }
-.shop-app-home .icondelivery-RH0WJ5 {
+.shop-app-home .group-x99SLO {
+  background-color: transparent;
+  flex-shrink: 1;
+  height: 65px;
+  position: relative;
+  width: 57px;
+}
+.shop-app-home .icondelivery-GW1jy1 {
   align-items: flex-start;
   background-color: transparent;
   box-sizing: border-box;
@@ -283,17 +427,17 @@ animation: menu-spin 0.4s ease-in-out;
   top: 42px;
   width: auto;
 }
-.shop-app-home .iconearrow-eSNWXa {
+.shop-app-home .iconearrow-nlxkfa {
   background-color: transparent;
-  background-image: url(../img/vector-6@2x.svg);
+  background-image: url(../img/arrow-svg@2x.svg);
   background-size: 100% 100%;
-  height: 50px;
+  height: 45px;
   left: 123px;
   position: absolute;
-  top: 65px;
-  width: 50px;
+  top: 69px;
+  width: 45px;
 }
-.shop-app-home .iconeestetica-4a9k2Y {
+.shop-app-home .iconeestetica-prdjcR {
   align-items: flex-start;
   background-color: transparent;
   box-sizing: border-box;
@@ -301,13 +445,13 @@ animation: menu-spin 0.4s ease-in-out;
   flex-direction: row;
   height: 56px;
   justify-content: center;
-  left: 318px;
+  left: 42px;
   min-width: 56px;
   position: absolute;
   top: 23px;
   width: auto;
 }
-.shop-app-home .iconegastronomia-RH0WJ5 {
+.shop-app-home .iconegastronomia-GW1jy1 {
   align-items: flex-start;
   background-color: transparent;
   box-sizing: border-box;
@@ -321,7 +465,52 @@ animation: menu-spin 0.4s ease-in-out;
   top: 42px;
   width: auto;
 }
-.shop-app-home .iconelojas-RH0WJ5 {
+.shop-app-home .iconemenu-y1HRxC {
+  background-color: transparent;
+  background-image: url(../img/menu-svg@2x.svg);
+  background-size: 100% 100%;
+  height: 31px;
+  left: 25px;
+  position: absolute;
+  top: 73px;
+  width: 41px;
+}
+.shop-app-home .iconeperfil-y1HRxC {
+  background-color: transparent;
+  background-image: url(../img/perfil-svg@2x.svg);
+  background-size: 100% 100%;
+  height: 45px;
+  left: 334px;
+  position: absolute;
+  top: 66px;
+  width: 45px;
+}
+.shop-app-home .iconepontos-8SqM8O {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: center;
+  left: 40px;
+  min-width: 60px;
+  position: absolute;
+  top: 44px;
+  width: auto;
+}
+.shop-app-home .logo-shop-y1HRxC {
+  background-color: transparent;
+  background-image: url(../img/logo-img@2x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 110px;
+  left: 103px;
+  position: absolute;
+  top: 25px;
+  width: 192px;
+}
+.shop-app-home .loja-svg-GW1jy1 {
   align-items: flex-start;
   background-color: transparent;
   box-sizing: border-box;
@@ -335,55 +524,7 @@ animation: menu-spin 0.4s ease-in-out;
   top: 38px;
   width: auto;
 }
-.shop-app-home .iconeperfil-4eduM0 {
-  background-color: transparent;
-  background-image: url(../img/vector-8@2x.svg);
-  background-size: 100% 100%;
-  height: 55px;
-  left: 334px;
-  position: absolute;
-  top: 66px;
-  width: 55px;
-}
-.shop-app-home .iconepontos-eSNWXa {
-  align-items: flex-start;
-  background-color: transparent;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  height: 60px;
-  justify-content: center;
-  left: 316px;
-  min-width: 60px;
-  position: absolute;
-  top: 40px;
-  width: auto;
-}
-.shop-app-home .iconeuser-4a9k2Y {
-  align-items: flex-start;
-  background-color: transparent;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  height: 50px;
-  justify-content: center;
-  left: 324px;
-  min-width: 45px;
-  position: absolute;
-  top: 175px;
-  width: auto;
-}
-.shop-app-home .inconemenu-4eduM0 {
-  background-color: transparent;
-  background-image: url(../img/vector-7@2x.svg);
-  background-size: 100% 100%;
-  height: 31px;
-  left: 25px;
-  position: absolute;
-  top: 73px;
-  width: 41px;
-}
-.shop-app-home .lojas-RH0WJ5 {
+.shop-app-home .lojas-GW1jy1 {
   background-color: transparent;
   height: auto;
   left: 318px;
@@ -395,7 +536,7 @@ animation: menu-spin 0.4s ease-in-out;
   white-space: nowrap;
   width: auto;
 }
-.shop-app-home .mask-group-5Gam2Z {
+.shop-app-home .mask-group-RBhHiT {
   background-color: transparent;
   height: 78px;
   left: 10px;
@@ -403,7 +544,7 @@ animation: menu-spin 0.4s ease-in-out;
   top: 9px;
   width: 76px;
 }
-.shop-app-home .mask-group-QfrZdW {
+.shop-app-home .mask-group-jhxcxO {
   background-color: transparent;
   height: 78px;
   left: 10px;
@@ -411,7 +552,7 @@ animation: menu-spin 0.4s ease-in-out;
   top: 9px;
   width: 76px;
 }
-.shop-app-home .mask-group-o2nuKq {
+.shop-app-home .mask-group-lXOMxY {
   background-color: transparent;
   height: 78px;
   left: 10px;
@@ -419,45 +560,43 @@ animation: menu-spin 0.4s ease-in-out;
   top: 9px;
   width: 76px;
 }
-.shop-app-home .overlap-group-C61RwL {
+.shop-app-home .new-user-1-omrVM0 {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  height: 65px;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0 3.8px;
+  position: relative;
+  width: 65px;
+}
+.shop-app-home .overlap-group-0xy0vn {
   background-color: transparent;
   flex-shrink: 1;
   height: 312px;
   position: relative;
   width: 414px;
 }
-.shop-app-home .overlap-group1-C61RwL {
+.shop-app-home .overlap-group1-0PZcXW {
   background-color: transparent;
   flex-shrink: 1;
-  height: 135px;
+  height: 183px;
   margin-top: 0px;
   position: relative;
-  width: 414px;
+  width: 276px;
 }
-.shop-app-home .overlap-group2-C61RwL {
-  background-color: transparent;
-  flex-shrink: 1;
-  height: 274px;
-  margin-top: 0px;
-  position: relative;
-  width: 415px;
-}
-.shop-app-home .overlap-group3-C61RwL {
-  background-color: transparent;
-  flex-shrink: 1;
-  height: 179px;
-  margin-top: 0px;
-  position: relative;
-  width: 415px;
-}
-.shop-app-home .overlap-group4-vzsVjG {
+.shop-app-home .overlap-group1-nzCgta {
   background-color: transparent;
   flex-shrink: 1;
   height: 8px;
   position: relative;
   width: 208px;
 }
-.shop-app-home .overlap-group5-vzsVjG {
+.shop-app-home .overlap-group2-nzCgta {
   background-color: transparent;
   flex-shrink: 1;
   height: 8px;
@@ -466,186 +605,38 @@ animation: menu-spin 0.4s ease-in-out;
   position: relative;
   width: 205px;
 }
-.shop-app-home .programa-de-pontos-eSNWXa {
+.shop-app-home .overlap-group2-y0eQTV {
   background-color: transparent;
-  height: auto;
-  left: 288px;
-  letter-spacing: 0.00px;
-  line-height: 20.2px;
-  position: absolute;
-  text-align: center;
-  top: 114px;
-  width: 115px;
-}
-.shop-app-home .rectangle-11-25fHuc {
-  background-color: var(--international-orange);
-  height: 8px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 105px;
-}
-.shop-app-home .rectangle-12-25fHuc {
-  background-color: var(--purple-heart);
-  height: 8px;
-  left: 103px;
-  position: absolute;
-  top: 0px;
-  width: 106px;
-}
-.shop-app-home .rectangle-12-RH0WJ5 {
-  background-color: var(--purple-heart);
-  height: 135px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
+  flex-shrink: 1;
+  height: 183px;
+  margin-top: 0px;
+  position: relative;
   width: 138px;
 }
-.shop-app-home .rectangle-13-wZSuRl {
-  background-color: rgba(228,29,127,1.0);
-  height: 8px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 105px;
-}
-.shop-app-home .rectangle-14-wZSuRl {
-  background-color: var(--violet);
-  height: 8px;
-  left: 100px;
-  position: absolute;
-  top: 0px;
-  width: 105px;
-}
-.shop-app-home .rectangle-15-4a9k2Y {
-  background-color: rgba(228,29,127,1.0);
-  height: 137px;
-  left: 275px;
-  position: absolute;
-  top: 0px;
-  width: 140px;
-}
-.shop-app-home .rectangle-16-4a9k2Y {
-  background-color: var(--purple-heart);
-  height: 137px;
-  left: 275px;
-  position: absolute;
-  top: 137px;
-  width: 140px;
-}
-.shop-app-home .rectangle-17-RH0WJ5 {
-  background-color: var(--international-orange);
+.shop-app-home .overlap-group3-0xy0vn {
+  background-color: transparent;
+  flex-shrink: 1;
   height: 135px;
-  left: 138px;
-  position: absolute;
-  top: 0px;
-  width: 138px;
-}
-.shop-app-home .rectangle-18-RH0WJ5 {
-  background-color: var(--violet);
-  height: 135px;
-  left: 276px;
-  position: absolute;
-  top: 0px;
-  width: 138px;
-}
-.shop-app-home .rectangle-19-eSNWXa {
-  background-color: var(--international-orange);
-  height: 179px;
-  left: 275px;
-  position: absolute;
-  top: 0px;
-  width: 140px;
-}
-.shop-app-home .rectangle-21-4eduM0 {
-  background-color: var(--violet);
-  height: 304px;
-  left: 0px;
-  position: absolute;
-  top: 8px;
+  margin-top: 0px;
+  position: relative;
   width: 414px;
 }
-.shop-app-home .rectangle-9-eSNWXa {
-  background-color: rgba(55,43,43,1.0);
-  height: 179px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
-  width: 276px;
-}
-.shop-app-home .ricardo-montanh-2-de-fev-hoje-1-4a9k2Y {
-  background-color: transparent;
-  height: 274px;
-  left: 0px;
-  object-fit: cover;
-  position: absolute;
-  top: 0px;
-  width: 276px;
-}
-.shop-app-home .stories-RXWVqI {
+.shop-app-home .overlap-group4-y0eQTV {
   background-color: transparent;
   flex-shrink: 1;
-  height: 96px;
+  height: 135px;
   position: relative;
-  width: 96px;
+  width: 138px;
 }
-.shop-app-home .stories-hb2xV8 {
+.shop-app-home .overlap-group5-y0eQTV {
   background-color: transparent;
   flex-shrink: 1;
-  height: 96px;
+  height: 135px;
+  margin-top: 0px;
   position: relative;
-  width: 96px;
+  width: 138px;
 }
-.shop-app-home .stories-uxFvNA {
-  background-color: transparent;
-  flex-shrink: 1;
-  height: 96px;
-  position: relative;
-  width: 96px;
-}
-.shop-app-home .storiestopo-4eduM0 {
-  align-items: flex-end;
-  background-color: transparent;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  justify-content: flex-start;
-  left: 32px;
-  min-height: 121px;
-  position: absolute;
-  top: 170px;
-  width: 102px;
-}
-.shop-app-home .storiestopo-6sb1qn {
-  align-items: flex-end;
-  background-color: transparent;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  justify-content: flex-start;
-  left: 287px;
-  min-height: 121px;
-  position: absolute;
-  top: 170px;
-  width: 102px;
-}
-.shop-app-home .storiestopo-BJQsbv {
-  align-items: flex-end;
-  background-color: transparent;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  justify-content: flex-start;
-  left: 164px;
-  min-height: 121px;
-  position: absolute;
-  top: 170px;
-  width: 102px;
-}
-.shop-app-home .vector-RnlF4y {
+.shop-app-home .pontos-svg-vdrz8r {
   background-color: transparent;
   flex-shrink: 1;
   height: 61px;
@@ -653,15 +644,76 @@ animation: menu-spin 0.4s ease-in-out;
   position: relative;
   width: 61px;
 }
-.shop-app-home .vector-USZvDH {
+.shop-app-home .programa-de-pontos-8SqM8O {
   background-color: transparent;
-  flex-shrink: 1;
-  height: 57px;
-  margin-top: -0.33px;
-  position: relative;
-  width: 57px;
+  height: auto;
+  left: 12px;
+  letter-spacing: 0.00px;
+  line-height: 20.2px;
+  position: absolute;
+  text-align: center;
+  top: 118px;
+  width: 115px;
 }
-.shop-app-home .vector-Z5mEPh {
+.shop-app-home .rectangle-21-y1HRxC {
+  background-color: rgba(35,10,68,1.0);
+  height: 304px;
+  left: 0px;
+  position: absolute;
+  top: 8px;
+  width: 414px;
+}
+.shop-app-home .storiestopo-7bcoqY {
+  align-items: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  left: 263px;
+  min-height: 121px;
+  position: absolute;
+  top: 170px;
+  width: 102px;
+}
+.shop-app-home .storiestopo-pqRchW {
+  align-items: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  left: 144px;
+  min-height: 121px;
+  position: absolute;
+  top: 170px;
+  width: 102px;
+}
+.shop-app-home .storiestopo-y1HRxC {
+  align-items: flex-end;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  left: 25px;
+  min-height: 121px;
+  position: absolute;
+  top: 170px;
+  width: 102px;
+}
+.shop-app-home .vector-6fKz3d {
+  background-color: transparent;
+  height: 33px;
+  left: 11px;
+  position: absolute;
+  top: -0px;
+  width: 28px;
+}
+.shop-app-home .vector-JA94Z4 {
   background-color: transparent;
   flex-shrink: 1;
   height: 43px;
@@ -669,36 +721,19 @@ animation: menu-spin 0.4s ease-in-out;
   position: relative;
   width: 45px;
 }
-.shop-app-home .vector-cWFyrQ {
+.shop-app-home .vector-eElDl1 {
   background-color: transparent;
-  flex-shrink: 1;
-  height: 34px;
-  margin-top: -0.4px;
-  position: relative;
-  width: 45px;
+  height: 31px;
+  left: -1px;
+  position: absolute;
+  top: 31px;
+  width: 47px;
 }
-.shop-app-home .vector-hQaHjI {
+.shop-app-home .vector-kqxW9b {
   background-color: transparent;
-  flex-shrink: 1;
-  height: 50px;
-  margin-top: -0.23px;
-  position: relative;
-  width: 46px;
-}
-.shop-app-home .vector-uOpcJf {
-  background-color: transparent;
-  flex-shrink: 1;
-  height: 34px;
-  margin-top: -0.4px;
-  position: relative;
-  width: 49px;
-}
-.shop-app-home .x2021c02-banner-s-docesv2-1-1-C61RwL {
-  background-color: transparent;
-  flex-shrink: 1;
-  height: 173px;
-  margin-top: 0px;
-  object-fit: cover;
-  position: relative;
-  width: 415px;
+  height: 26px;
+  left: 32px;
+  position: absolute;
+  top: 39px;
+  width: 26px;
 }

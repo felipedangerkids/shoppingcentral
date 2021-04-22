@@ -52,3 +52,8 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 
 Route::post('/cart-add', [CartController::class, 'cartAdd']);
+
+
+Route::get('teste-layout', function () {
+    return view('layouts.site');
+});
