@@ -15,8 +15,7 @@
   <!-- Add the slick-theme.css if you want default styling -->
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Add the slick-theme.css if you want default styling -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="{{ asset('css/app.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/main.min.css') }}">
@@ -32,7 +31,7 @@
   <div class="container-center-horizontal">
     <div class="shop-app-home screen">
       <div class="flex-col-C61RwL">
-        <div class="overlap-group-0xy0vn">
+        <div class="@if (Request::is('/')) overlap-group-0xy0vn @else backgroud-roxo   @endif">
           <div class="barracolorida-y1HRxC">
             <div class="group-11-Xs8u4z">
               <div class="overlap-group1-nzCgta">
@@ -45,28 +44,33 @@
               </div>
             </div>
           </div>
-          <div class="rectangle-21-y1HRxC"></div>
-          <div class="storiestopo-y1HRxC">
-            <div class="circulo-svg-bkBUvi">
-              <img class="mask-group-jhxcxO" src="{{ url('assets/img/mask-group@2x.svg') }}" />
-              <img class="circulo-interno-svg-jhxcxO" src="{{ url('assets/img/circulo-interno-svg@2x.svg') }}" />
-            </div>
-            <div class="boticrio-i545537-bkBUvi barlow-black-white-20px">Boticário</div>
+          <div class="">
+            @if (Request::is('/'))
+                    <div class="storiestopo-y1HRxC">
+                      <div class="circulo-svg-bkBUvi">
+                        <img class="mask-group-jhxcxO" src="{{ url('assets/img/mask-group@2x.svg') }}" />
+                        <img class="circulo-interno-svg-jhxcxO" src="{{ url('assets/img/circulo-interno-svg@2x.svg') }}" />
+                      </div>
+                      <div class="boticrio-i545537-bkBUvi barlow-black-white-20px">Boticário</div>
+                    </div>
+                    <div class="storiestopo-pqRchW">
+                      <div class="circulo-svg-cVM2MY">
+                        <img class="mask-group-lXOMxY" src="{{ url('assets/img/mask-group@2x.svg') }}" />
+                        <img class="circulo-interno-svg-lXOMxY" src="{{ url('assets/img/circulo-interno-svg@2x.svg') }}" />
+                      </div>
+                      <div class="boticrio-i8548537-cVM2MY barlow-black-white-20px">Boticário</div>
+                    </div>
+                    <div class="storiestopo-7bcoqY">
+                      <div class="circulo-svg-xmYI7Q">
+                        <img class="mask-group-RBhHiT" src="{{ url('assets/img/mask-group@2x.svg') }}" />
+                        <img class="circulo-interno-svg-RBhHiT" src="{{ url('assets/img/circulo-interno-svg@2x.svg') }}" />
+                      </div>
+                      <div class="boticrio-i8555537-xmYI7Q barlow-black-white-20px">Boticário</div>
+                    </div>
+                    @endif
           </div>
-          <div class="storiestopo-pqRchW">
-            <div class="circulo-svg-cVM2MY">
-              <img class="mask-group-lXOMxY" src="{{ url('assets/img/mask-group@2x.svg') }}" />
-              <img class="circulo-interno-svg-lXOMxY" src="{{ url('assets/img/circulo-interno-svg@2x.svg') }}" />
-            </div>
-            <div class="boticrio-i8548537-cVM2MY barlow-black-white-20px">Boticário</div>
-          </div>
-          <div class="storiestopo-7bcoqY">
-            <div class="circulo-svg-xmYI7Q">
-              <img class="mask-group-RBhHiT" src="{{ url('assets/img/mask-group@2x.svg') }}" />
-              <img class="circulo-interno-svg-RBhHiT" src="{{ url('assets/img/circulo-interno-svg@2x.svg') }}" />
-            </div>
-            <div class="boticrio-i8555537-xmYI7Q barlow-black-white-20px">Boticário</div>
-          </div>
+  
+
           <div class="iconemenu-y1HRxC"></div>
           <div class="iconeperfil-y1HRxC"></div>
           <div class="logo-shop-y1HRxC"></div>
