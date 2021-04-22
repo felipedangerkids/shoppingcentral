@@ -1,0 +1,603 @@
+/* screen - shop-app-page-lojas-produtos */
+
+.shop-app-page-lojas-produtos {
+      align-items: center;
+      background-color: rgba(242, 242, 242, 1);
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      justify-content: flex-start;
+      min-height: 1248px;
+      overflow-x: hidden;
+      position: relative;
+      width: 414px;
+}
+.shop-app-page-lojas-produtos .add-sacola-1dnhym {
+      align-items: flex-start;
+      background-color: var(--international-orange);
+      border-radius: 7.421446323394775px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      height: 43px;
+      justify-content: flex-start;
+      margin-left: 44px;
+      min-width: 160px;
+      padding: 5.6px 8.3px;
+      position: relative;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .add-sacola-AYFtQ1 {
+      align-items: flex-start;
+      background-color: var(--international-orange);
+      border-radius: 7.421446323394775px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      height: 43px;
+      justify-content: flex-start;
+      min-width: 160px;
+      padding: 5.6px 8.3px;
+      position: relative;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .add-sacola-QuxQk9 {
+      align-items: flex-start;
+      background-color: var(--international-orange);
+      border-radius: 7.421446323394775px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      height: 43px;
+      justify-content: flex-start;
+      min-width: 160px;
+      padding: 5.6px 8.3px;
+      position: relative;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .add-sacola-w9mVNm {
+      align-items: flex-start;
+      background-color: var(--international-orange);
+      border-radius: 7.421446323394775px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      height: 43px;
+      justify-content: flex-start;
+      margin-left: 44px;
+      min-width: 160px;
+      padding: 5.6px 8.3px;
+      position: relative;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .barracolorida-4eduM0 {
+      align-items: flex-start;
+      background-color: transparent;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      height: 8px;
+      justify-content: flex-start;
+      left: 0px;
+      min-width: 414px;
+      position: absolute;
+      top: 0px;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .cart-RH0WJ5 {
+      background-color: transparent;
+      background-image: url(../img/cart-img@2x.svg);
+      background-size: 100% 100%;
+      height: 47px;
+      left: 308px;
+      position: absolute;
+      top: 15px;
+      width: 49px;
+}
+.shop-app-page-lojas-produtos .ellipse-2-RH0WJ5 {
+      background-color: transparent;
+      height: 41px;
+      left: 345px;
+      position: absolute;
+      top: 7px;
+      width: 41px;
+}
+.shop-app-page-lojas-produtos .flex-row-2P4qUJ {
+      align-items: flex-start;
+      background-color: transparent;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      height: 164px;
+      justify-content: flex-start;
+      margin-right: 3.73px;
+      margin-top: 39px;
+      min-width: 368px;
+      position: relative;
+      width: auto;
+}
+.produto {
+      align-items: flex-start;
+      background-color: transparent;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      flex-wrap: wrap;
+      height: 164px;
+      justify-content: flex-start;
+      margin-right: 3.73px;
+      margin-top: 25px;
+      min-width: 368px;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .flex-row-J1YQmd {
+      align-items: flex-start;
+      background-color: transparent;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      height: 28px;
+      justify-content: flex-start;
+      margin-right: 2px;
+      margin-top: 12px;
+      min-width: 312px;
+      position: relative;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .flex-row-QxM5SU {
+      align-items: flex-start;
+      background-color: transparent;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      height: 43px;
+      justify-content: flex-start;
+      margin-right: 2.51px;
+      margin-top: 6px;
+      min-width: 365px;
+      position: relative;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .flex-row-VMr6Om {
+      align-items: flex-start;
+      background-color: transparent;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      height: 166px;
+      justify-content: flex-start;
+      margin-right: 1px;
+      margin-top: 11px;
+      min-width: 367px;
+      position: relative;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .flex-row-a5WPlX {
+      align-items: flex-start;
+      background-color: transparent;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      height: 43px;
+      justify-content: flex-start;
+      margin-right: 2.51px;
+      margin-top: 6px;
+      min-width: 365px;
+      position: relative;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .flex-row-mzXdH9 {
+      align-items: flex-start;
+      background-color: transparent;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      height: 28px;
+      justify-content: flex-start;
+      margin-right: 2px;
+      margin-top: 12px;
+      min-width: 312px;
+      position: relative;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .flex-row-qr8e7q {
+      align-items: flex-start;
+      background-color: transparent;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      height: 166px;
+      justify-content: flex-start;
+      margin-right: 1px;
+      margin-top: 11px;
+      min-width: 367px;
+      position: relative;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .group-11-HIUWuo {
+      align-items: flex-start;
+      background-color: transparent;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      height: 8px;
+      justify-content: flex-start;
+      min-width: 414px;
+      position: relative;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .icone-arrow-RH0WJ5 {
+      align-items: flex-start;
+      background-color: transparent;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      height: 45px;
+      justify-content: flex-start;
+      left: 34px;
+      min-width: 45px;
+      position: absolute;
+      top: 13px;
+      transform: rotate(180deg);
+      width: auto;
+}
+.shop-app-page-lojas-produtos .icone-arrow-l6excR {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 45px;
+      position: relative;
+      transform: rotate(-180deg);
+      width: 45px;
+}
+.shop-app-page-lojas-produtos .icone-menu-4eduM0 {
+      background-color: transparent;
+      background-image: url(../img/icone-menu@2x.svg);
+      background-size: 100% 100%;
+      height: 31px;
+      left: 25px;
+      position: absolute;
+      top: 73px;
+      width: 41px;
+}
+.shop-app-page-lojas-produtos .iconeperfil-4eduM0 {
+      background-color: transparent;
+      background-image: url(../img/perfil-svg@2x.svg);
+      background-size: 100% 100%;
+      height: 45px;
+      left: 334px;
+      position: absolute;
+      top: 66px;
+      width: 45px;
+}
+.shop-app-page-lojas-produtos .imagem-8jxMpa {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 164px;
+      margin-left: 41px;
+      object-fit: cover;
+      position: relative;
+      width: 164px;
+}
+.shop-app-page-lojas-produtos .imagem-Xi618D {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 164px;
+      margin-left: 41px;
+      object-fit: cover;
+      position: relative;
+      width: 164px;
+}
+.shop-app-page-lojas-produtos .imagem-dXBp89 {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 164px;
+      object-fit: cover;
+      position: relative;
+      width: 164px;
+}
+.shop-app-page-lojas-produtos .imagem-iuat1W {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 164px;
+      object-fit: cover;
+      position: relative;
+      width: 164px;
+}
+.shop-app-page-lojas-produtos .kit-presente-di-ranspirante-75g-BdpSxK {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 166px;
+      letter-spacing: 0px;
+      line-height: 21.7px;
+      min-height: 166px;
+      position: relative;
+      text-align: center;
+      width: 162px;
+}
+.shop-app-page-lojas-produtos .kit-presente-di-ranspirante-75g-KCO4AX {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 166px;
+      letter-spacing: 0px;
+      line-height: 21.7px;
+      margin-left: 43px;
+      min-height: 166px;
+      position: relative;
+      text-align: center;
+      width: 162px;
+}
+.shop-app-page-lojas-produtos .kit-presente-di-ranspirante-75g-hVAxGq {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 166px;
+      letter-spacing: 0px;
+      line-height: 21.7px;
+      margin-left: 43px;
+      min-height: 166px;
+      position: relative;
+      text-align: center;
+      width: 162px;
+}
+.shop-app-page-lojas-produtos .kit-presente-di-ranspirante-75g-uuB7Ma {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 166px;
+      letter-spacing: 0px;
+      line-height: 21.7px;
+      min-height: 166px;
+      position: relative;
+      text-align: center;
+      width: 162px;
+}
+.shop-app-page-lojas-produtos .logo-shop-4eduM0 {
+      background-color: transparent;
+      background-image: url(../img/logo-img@2x.png);
+      background-position: 50% 50%;
+      background-size: cover;
+      height: 110px;
+      left: 103px;
+      position: absolute;
+      top: 25px;
+      width: 192px;
+}
+.shop-app-page-lojas-produtos .overlap-group-C61RwL {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 161px;
+      position: relative;
+      width: 414px;
+}
+.shop-app-page-lojas-produtos .overlap-group1-C61RwL {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 71px;
+      margin-top: 0px;
+      position: relative;
+      width: 414px;
+}
+.shop-app-page-lojas-produtos .overlap-group2-vzsVjG {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 8px;
+      position: relative;
+      width: 208px;
+}
+.shop-app-page-lojas-produtos .overlap-group3-vzsVjG {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 8px;
+      margin-left: 0px;
+      margin-top: 0px;
+      position: relative;
+      width: 205px;
+}
+.shop-app-page-lojas-produtos .perfumes-RH0WJ5 {
+      background-color: transparent;
+      color: var(--white);
+      font-family: "Barlow", Helvetica;
+      font-size: 23.2px;
+      font-style: normal;
+      font-weight: 900;
+      height: 12px;
+      left: 130px;
+      letter-spacing: 0px;
+      line-height: 11.8px;
+      position: absolute;
+      text-align: left;
+      top: 29px;
+      white-space: nowrap;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .r-17990-ALYuUF {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 28px;
+      letter-spacing: 0px;
+      line-height: 27.7px;
+      min-height: 28px;
+      min-width: 107px;
+      position: relative;
+      text-align: left;
+      white-space: nowrap;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .r-17990-NwNIwt {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 28px;
+      letter-spacing: 0px;
+      line-height: 27.7px;
+      min-height: 28px;
+      min-width: 107px;
+      position: relative;
+      text-align: left;
+      white-space: nowrap;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .r-17990-jQ4xlL {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 28px;
+      letter-spacing: 0px;
+      line-height: 27.7px;
+      margin-left: 98px;
+      min-height: 28px;
+      min-width: 107px;
+      position: relative;
+      text-align: left;
+      white-space: nowrap;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .r-17990-tjeGgw {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 28px;
+      letter-spacing: 0px;
+      line-height: 27.7px;
+      margin-left: 98px;
+      min-height: 28px;
+      min-width: 107px;
+      position: relative;
+      text-align: left;
+      white-space: nowrap;
+      width: auto;
+}
+.shop-app-page-lojas-produtos .rectangle-11-DSa5uv {
+      background-color: var(--international-orange);
+      height: 8px;
+      left: 0px;
+      position: absolute;
+      top: 0px;
+      width: 105px;
+}
+.shop-app-page-lojas-produtos .rectangle-12-DSa5uv {
+      background-color: rgba(108, 28, 209, 1);
+      height: 8px;
+      left: 103px;
+      position: absolute;
+      top: 0px;
+      width: 106px;
+}
+.shop-app-page-lojas-produtos .rectangle-13-7hjmpL {
+      background-color: rgba(228, 29, 127, 1);
+      height: 8px;
+      left: 0px;
+      position: absolute;
+      top: 0px;
+      width: 105px;
+}
+.shop-app-page-lojas-produtos .rectangle-14-7hjmpL {
+      background-color: var(--white);
+      height: 8px;
+      left: 100px;
+      position: absolute;
+      top: 0px;
+      width: 105px;
+}
+.shop-app-page-lojas-produtos .rectangle-21-4eduM0 {
+      background-color: rgba(35, 10, 68, 1);
+      height: 153px;
+      left: 0px;
+      position: absolute;
+      top: 8px;
+      width: 414px;
+}
+.shop-app-page-lojas-produtos .rectangle-89-RH0WJ5 {
+      background-color: rgba(108, 28, 209, 1);
+      height: 71px;
+      left: 0px;
+      position: absolute;
+      top: 0px;
+      width: 414px;
+}
+.shop-app-page-lojas-produtos .ttulo-3-i11740334185-shgJtE {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 31px;
+      letter-spacing: 0px;
+      line-height: 11.8px;
+      min-height: 31px;
+      position: relative;
+      text-align: center;
+      width: 142px;
+}
+.shop-app-page-lojas-produtos .ttulo-3-i11741234185-Ge3drr {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 31px;
+      letter-spacing: 0px;
+      line-height: 11.8px;
+      min-height: 31px;
+      position: relative;
+      text-align: center;
+      width: 142px;
+}
+.shop-app-page-lojas-produtos .ttulo-3-i11741334185-hb6ETo {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 31px;
+      letter-spacing: 0px;
+      line-height: 11.8px;
+      min-height: 31px;
+      position: relative;
+      text-align: center;
+      width: 142px;
+}
+.shop-app-page-lojas-produtos .ttulo-3-i3418834185-QWBGeE {
+      background-color: transparent;
+      color: var(--white);
+      flex-shrink: 1;
+      font-family: "Barlow", Helvetica;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 900;
+      height: 31px;
+      letter-spacing: 0px;
+      line-height: 12.7px;
+      min-height: 31px;
+      position: relative;
+      text-align: center;
+      width: 142px;
+}
+.shop-app-page-lojas-produtos .x10-RH0WJ5 {
+      background-color: transparent;
+      color: var(--white);
+      font-family: "Barlow", Helvetica;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 900;
+      height: auto;
+      left: 349px;
+      letter-spacing: 0px;
+      line-height: 27.7px;
+      position: absolute;
+      text-align: center;
+      top: 13px;
+      white-space: nowrap;
+      width: 35px;
+}
+.price-font {
+      background-color: transparent;
+      flex-shrink: 1;
+      height: 28px;
+      letter-spacing: 0px;
+      line-height: 27.7px;
+      min-height: 28px;
+      min-width: 107px;
+      width: auto;
+      text-align: center;
+}

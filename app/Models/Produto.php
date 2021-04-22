@@ -26,4 +26,9 @@ class Produto extends Model
     {
         return $this->belongsTo(Estabelecimento::class, 'est_id');
     }
+
+    public function categoria()
+    {
+        return $this->belongsTo(Category::class, 'category_id');
+    }
 }

@@ -26,7 +26,7 @@ Route::get('/estetica', [SiteController::class, 'cosmeticos']);
 Route::get('/lojas', [SiteController::class, 'lojas']);
 Route::get('/coming', [SiteController::class, 'coming']);
 Route::get('/cardapio/{id}', [SiteController::class, 'cardapio']);
-Route::get('/produto/{slug}', [SiteController::class, 'produto']);
+Route::get('/produto/{id}', [SiteController::class, 'produto']);
 Route::middleware(['auth:sanctum', 'verified'])->get('/cliente', [SiteController::class, 'cliente'])->name('cliente');
 Route::middleware(['auth:sanctum', 'verified'])->post('/produto-store', [ProdutoController::class, 'store']);
 Route::middleware(['auth:sanctum', 'verified'])->post('/user-store', [UserController::class, 'store']);

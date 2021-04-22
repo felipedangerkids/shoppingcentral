@@ -30,20 +30,24 @@ $cores = array("bg-roxo-escuro", "bg-rosa", "bg-cinza", "bg-roxo", "bg-laranja")
             </div>
             <div class="icon-relogio-RH0WJ5"></div>
             <div class="rectangle-89-RH0WJ5"></div>
-            <div class="icone-arrow-RH0WJ5"><img class="icone-arrow-l6excR"
-                        src="{{ url('assets/img/icone-arrow@2x.svg') }}" /></div>
+            <a href="javascript:history.back()">
+                  <div class="icone-arrow-RH0WJ5"><img class="icone-arrow-l6excR"
+                              src="{{ url('assets/img/icone-arrow@2x.svg') }}" /></div>
+            </a>
             <div class="img-logo">
                   <img class="logo" src="{{ asset('storage/logos/'. $estabelecimento->logo) }}" alt="">
             </div>
             <div class="cart-RH0WJ5"></div>
             <img class="ellipse-2-RH0WJ5" src="{{ url('assets/img/ellipse-2@2x.svg') }}" />
-            <div class="x10-RH0WJ5">0</div>
+            <div class="x10-RH0WJ5">{{Cart::getTotalQuantity()}}</div>
       </div>
       <div class="flex">
             @foreach ($estabelecimento->categorias as $cat)
-            <div class="block {!! $cores[array_rand($cores, 1)] !!}">
-                  <h4 class="fonte-h4 barlow-black-white-18px">{{ $cat->name }}</h4>
-            </div>
+            <a href="{{ url('produto/'. $cat->id) }}">
+                  <div class="block {!! $cores[array_rand($cores, 1)] !!}">
+                        <h4 class="fonte-h4 barlow-black-white-18px">{{ $cat->name }}</h4>
+                  </div>
+            </a>
             @endforeach
       </div>
 

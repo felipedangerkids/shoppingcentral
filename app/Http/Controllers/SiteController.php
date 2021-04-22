@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Estabelecimento;
 use App\Models\User;
 use App\Models\Produto;
@@ -43,10 +44,11 @@ class SiteController extends Controller
         $estabelecimento = Estabelecimento::with('produtos', 'categorias')->find($id);
         return view('site.estabelecimentos.cardapio', compact('estabelecimento'));
     }
-    public function produto($slug)
+    public function produto($id)
     {
 
-        $produto = Produto::with('estabelecimento')->where('slug', $slug)->get()->first();
+        $produto = Produto::with('categoria')->where('category_id', $id)->get();
+
         return view('site.produto', compact('produto'));
     }
 

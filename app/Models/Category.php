@@ -35,4 +35,8 @@ class Category extends Model
     {
         return $this->belongsTo(Estabelecimento::class, 'est_id');
     }
+    public function produtos()
+    {
+        return $this->hasMany(Produto::class, 'category_id');
+    }
 }

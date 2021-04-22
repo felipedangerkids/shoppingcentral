@@ -27,7 +27,7 @@ class CartController extends Controller
             )
         ));
 
-        return redirect()->back()->with('message', 'Produto adicionado no carrinho!');
+        return redirect()->back()->with('success', 'Produto adicionado no carrinho!');
 
         return redirect()->back();
     }
