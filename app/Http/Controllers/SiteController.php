@@ -40,7 +40,7 @@ class SiteController extends Controller
     public function cardapio($id)
     {
 
-        $estabelecimento = Estabelecimento::with('produtos')->find($id);
+        $estabelecimento = Estabelecimento::with('produtos', 'categorias')->find($id);
         return view('site.estabelecimentos.cardapio', compact('estabelecimento'));
     }
     public function produto($slug)

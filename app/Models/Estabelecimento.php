@@ -25,6 +25,6 @@ class Estabelecimento extends Model
 
     public function categorias()
     {
-        return $this->hasMany(Category::class);
+        return $this->hasMany(Category::class, 'est_id');
     }
 }
