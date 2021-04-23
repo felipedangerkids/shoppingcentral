@@ -18,7 +18,7 @@
       <a href="{{ url('lojas') }}">
             <div class="fundo-preto-GW1jy1"></div>
             <div class="lojas-GW1jy1 barlow-black-white-18px">LOJAS</div>
-            <div class="loja-svg-GW1jy1"><img class="vector-JA94Z4" src="{{ url('assets/img/vector@2x.svg') }}" /></div>
+            <div class="loja-svg-GW1jy1"><img class="vector-JA94Z4" src="{{ url('assets/img/loja.svg') }}" /></div>
       </a>
 </div>
 </div>
@@ -49,11 +49,11 @@
                                     <div class="group-Bllyls">
                                           <div class="group-x99SLO">
                                                 <img class="vector-6fKz3d"
-                                                      src="{{ url('assets/img/vector-1@2x.svg') }}" />
+                                                      src="{{ url('assets/img/cad-1.svg') }}" />
                                                 <img class="vector-eElDl1"
-                                                      src="{{ url('assets/img/vector-2@2x.svg') }}" />
+                                                      src="{{ url('assets/img/cad-2.svg') }}" />
                                                 <img class="vector-kqxW9b"
-                                                      src="{{ url('assets/img/vector-3@2x.svg') }}" />
+                                                      src="{{ url('assets/img/cad-3.svg') }}" />
                                           </div>
                                     </div>
                               </div>
