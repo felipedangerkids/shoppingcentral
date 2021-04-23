@@ -23,12 +23,18 @@ class CartController extends Controller
                 'image' => $request->image,
                 'category_id' => $product['category_id'],
                 'slug' => $product['slug'],
+                'description' => $product['description'],
 
             )
         ));
 
-        return redirect()->back()->with('success', 'Produto adicionado no carrinho!');
+        return redirect()->route('cart')->with('success', 'Produto adicionado no carrinho!');
 
-        return redirect()->back();
+       
+    }
+
+    public function cart()
+    {
+        return view('site.cart.cart');
     }
 }

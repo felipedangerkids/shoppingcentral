@@ -11,9 +11,11 @@
                         <div class="icone-arrow-RH0WJ5"><img class="icone-arrow-l6excR"
                                     src="{{ url('assets/img/icone-arrow@2x.svg') }}" /></div>
                   </a>
-                  <div class="cart-RH0WJ5"></div>
-                  <img class="ellipse-2-RH0WJ5" src="{{ url('assets/img/ellipse-2@2x.svg') }}" />
-                  <div class="x10-RH0WJ5">{{Cart::getTotalQuantity()}}</div>
+                  <a href="{{ route('cart') }}">
+                        <div class="cart-RH0WJ5"></div>
+                        <img class="ellipse-2-RH0WJ5" src="{{ url('assets/img/ellipse-2@2x.svg') }}" />
+                        <div class="x10-RH0WJ5">{{Cart::getTotalQuantity()}}</div>
+                  </a>
                   <div class="perfumes-RH0WJ5 valign-text-middle">Categoria</div>
             </div>
 
@@ -36,6 +38,7 @@
                                     <input type="hidden" name="slug" value="{{ $prod->slug }}">
                                     <input type="hidden" name="price" value="{{ $prod->price }}">
                                     <input type="hidden" name="image" value=" {{  $prod->image }}">
+                                    <input type="hidden" name="description" value=" {{  $prod->desc }}">
                                     <input type="hidden" name="amount" value="1">
                                     <input type="hidden" name="category_id" value=" {{  $prod->category_id }}">
                                     <button type="submit"
